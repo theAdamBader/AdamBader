@@ -288,7 +288,6 @@ iframe {
   object-fit: cover;
   margin: auto;
 }
-
 .overlay img {
   position: absolute;
   width: 750px;
@@ -303,7 +302,6 @@ iframe {
   object-fit: cover;
   margin: auto;
 }
-
 .overlay-phone img {
   position: absolute;
   width: 760px;
@@ -314,15 +312,16 @@ iframe {
 
 .overlay-pics {
   position: relative;
+  width: 100%;
+  height: 500px;
   object-fit: cover;
   margin: auto;
 }
-
 .overlay-pics img {
   position: absolute;
+  object-fit: cover;
   width: 760px;
-  height: 420px;
-  margin-top: 55px;
+  top: 5.5%;
   object-fit: cover;
 }
 
