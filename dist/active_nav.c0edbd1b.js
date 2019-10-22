@@ -118,15 +118,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/active_nav.js":[function(require,module,exports) {
-//When click on an active li function then the colour will be highlighted as blue
+// When click on an active li function then the colour will be highlighted as blue
 $(document).on('click', 'nav li', function () {
-  //the member of the function li .active will be removed and added onto an li child within the nav function
+  // The member of the function li .active will be removed and added onto an li child within the nav function
   $(this).addClass('active').siblings().removeClass('active');
-}); //When the page is refreshed it would return to the top of the screen
+}); // Sets the animation for 2200 milliseconds for it to animated and fade to the page
 
-$(window).on('beforeunload', function () {
-  $(window).scrollTop(0);
-});
 setTimeout(function () {
   $('.loader').fadeToggle();
 }, 2200);
@@ -158,7 +155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54500" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53207" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
