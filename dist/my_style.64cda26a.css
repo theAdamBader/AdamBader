@@ -267,6 +267,36 @@ h1 {
   margin-block-end: -0.4em;
 }
 
+h3 {
+  font-size: 3.5rem;
+}
+h3 a {
+  text-decoration: none;
+  list-style: none;
+  color: #333333;
+}
+
+.contact-font {
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.change-span:before {
+  content: "";
+  animation: change infinite 2s;
+}
+
+@keyframes change {
+  0% {
+    content: "Collaborations";
+  }
+  50% {
+    content: "New Projects";
+  }
+  100% {
+    content: "Experiences";
+  }
+}
 .paragraph {
   font-size: 1.2em;
   color: #343a40;
@@ -385,47 +415,6 @@ iframe {
 
 .h2-font {
   font-size: 2em;
-}
-
-/* SOCIAL ICONS */
-.social-buttons {
-  list-style: none;
-  display: flex;
-}
-.social-buttons li {
-  margin: auto 0 auto 0;
-}
-.social-buttons .twitter-colour {
-  background-image: url(/twitter_hover.f5168215.png);
-  border-radius: 100%;
-}
-.social-buttons .twitter-colour:hover {
-  background-image: url(/twitter.c4d56891.png);
-  background-color: #000000;
-}
-.social-buttons .gitHub-colour {
-  background-image: url(/github_hover.1c5d7461.png);
-  border-radius: 100%;
-}
-.social-buttons .gitHub-colour:hover {
-  background-image: url(/github.4ad1b237.png);
-  background-color: #000000;
-}
-.social-buttons .linkedIn-colour {
-  background-image: url(/linkedIn.ad4bda8d.png);
-  border-radius: 100%;
-}
-.social-buttons .linkedIn-colour:hover {
-  background-image: url(/linkedIn_hover.4598124a.png);
-  background-color: #000000;
-}
-.social-buttons .gmail-colour {
-  background-image: url(/gmail.be00d15f.png);
-  border-radius: 100%;
-}
-.social-buttons .gmail-colour:hover {
-  background-image: url(/gmail_hover.1b9a3dbe.png);
-  background-color: #000000;
 }
 
 /* RESPONSIVE NAV */
@@ -561,6 +550,15 @@ iframe {
   .vid-display {
     display: block;
   }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-font {
+    font-size: 0.5rem;
+    color: #333333;
+  }
 }
 @media screen and (max-width: 500px) {
   .section-positioning {
@@ -586,6 +584,47 @@ iframe {
 }
 .future-update {
   display: none;
+}
+
+/* SOCIAL ICONS */
+.social-buttons {
+  list-style: none;
+  display: flex;
+}
+.social-buttons li {
+  margin: auto 0 auto 0;
+}
+.social-buttons .twitter-colour {
+  background-image: url(/twitter_hover.f5168215.png);
+  border-radius: 100%;
+}
+.social-buttons .twitter-colour:hover {
+  background-image: url(/twitter.c4d56891.png);
+  background-color: #000000;
+}
+.social-buttons .gitHub-colour {
+  background-image: url(/github_hover.1c5d7461.png);
+  border-radius: 100%;
+}
+.social-buttons .gitHub-colour:hover {
+  background-image: url(/github.4ad1b237.png);
+  background-color: #000000;
+}
+.social-buttons .linkedIn-colour {
+  background-image: url(/linkedIn.ad4bda8d.png);
+  border-radius: 100%;
+}
+.social-buttons .linkedIn-colour:hover {
+  background-image: url(/linkedIn_hover.4598124a.png);
+  background-color: #000000;
+}
+.social-buttons .gmail-colour {
+  background-image: url(/gmail.be00d15f.png);
+  border-radius: 100%;
+}
+.social-buttons .gmail-colour:hover {
+  background-image: url(/gmail_hover.1b9a3dbe.png);
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=/my_style.64cda26a.css.map */

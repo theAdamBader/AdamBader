@@ -24,6 +24,6 @@ $(document).ready(function(){
   });
 
   // When the page is refreshed it would return to the top of the screen
-$(window).on('beforeunload', function(){
-  $(window).scrollTop(0);
-});
+// $(window).on('beforeunload', function(){
+//   $(window).scrollTop(0);
+// });
