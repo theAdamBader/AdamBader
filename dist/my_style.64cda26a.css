@@ -21,7 +21,7 @@ body {
 }
 
 .about-container {
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 .about-container .paragraph-positioning {
@@ -31,7 +31,7 @@ body {
 }
 
 .section-positioning {
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 .section-positioning .paragraph-positioning {
@@ -400,16 +400,16 @@ iframe {
   border-radius: 100%;
 }
 .social-buttons .twitter-colour:hover {
-  background-image: url(/twitter_hover.f5168215.png);
-  background-color: #ffffff;
+  background-image: url(/twitter.c4d56891.png);
+  background-color: #000000;
 }
 .social-buttons .gitHub-colour {
   background-image: url(/github_hover.1c5d7461.png);
   border-radius: 100%;
 }
 .social-buttons .gitHub-colour:hover {
-  background-image: url(/github_hover.1c5d7461.png);
-  background-color: #ffffff;
+  background-image: url(/github.4ad1b237.png);
+  background-color: #000000;
 }
 .social-buttons .linkedIn-colour {
   background-image: url(/linkedIn.ad4bda8d.png);
@@ -417,7 +417,7 @@ iframe {
 }
 .social-buttons .linkedIn-colour:hover {
   background-image: url(/linkedIn_hover.4598124a.png);
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .social-buttons .gmail-colour {
   background-image: url(/gmail.be00d15f.png);
@@ -425,10 +425,10 @@ iframe {
 }
 .social-buttons .gmail-colour:hover {
   background-image: url(/gmail_hover.1b9a3dbe.png);
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
-/* RESPONSIVE NAV*/
+/* RESPONSIVE NAV */
 @media screen and (max-width: 800px) {
   .line {
     width: 30px;
@@ -456,7 +456,7 @@ iframe {
     flex-direction: column;
     clip-path: circle(90px at 92% -5%);
     -webkit-clip-path: circle(90px at 92% -5%);
-    transition: all 0.5s ease-out;
+    transition: all 0.6s ease-out;
     pointer-events: none;
     z-index: 98;
   }
@@ -567,7 +567,7 @@ iframe {
     height: 100%;
     width: 100%;
   }
-  .section-positioning .paragraph-positioning img {
+  .section-positioning .paragraph-positioning .img-container {
     display: none;
   }
   .section-positioning .each-list:hover {
@@ -583,6 +583,9 @@ iframe {
     height: auto;
     min-width: 150px;
   }
+}
+.future-update {
+  display: none;
 }
 
 /*# sourceMappingURL=/my_style.64cda26a.css.map */

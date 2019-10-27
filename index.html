@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adam Bader | Portfolio</title>
 
-    <!-- CSS -->
+        <!-- CSS -->
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
 
         <!-- STYLESHEETS -->
         <link href="./css/my_style.scss" rel="stylesheet">
         <link href="./css/pre_load.css" rel="stylesheet">
+        <link href="./css/artwork.css" rel="stylesheet">
+        <link href="./css/contactform.css" rel="stylesheet">
 
 </head>
 <body>
@@ -60,9 +62,11 @@
                     <li>
                         <a class="navtext" href="#portfolio">UNIVERSITY PROJECTS</a>
                         </li>
+                    <div class="future-update">
                     <li> 
                         <a class="navtext" href="#projects">PROJECTS</a>
                     </li>
+                    </div>
                     <li> 
                         <a class="navtext" href="#art">ARTWORK</a>
                     </li>
@@ -175,6 +179,7 @@
     </div>
 
     <!-- personal projects -->
+    <div class="future-update">
     <div class="container">
         <section class="section-positioning" id="projects">
             <div class="paragraph-positioning">
@@ -202,13 +207,20 @@
             </div>
         </section>
     </div>
+    </div>
 
     <!-- art projects -->
     <div class="container">
         <section class="section-positioning" id="art">
             <div class="paragraph-positioning">
                 <h2 class="">ART<span>WORK</span></h2>
-                
+
+                <img class='artwork-img' src="./img/artwork/knight.jpg" alt='knight made using Aseprite'>
+                <img class='artwork-img' src="./img/artwork/necromancer.jpg" alt='necromancer made using Aseprite'>
+                <img class='artwork-img' src="./img/artwork/the_void.jpg" alt='image of person in the void'>
+                <img class='artwork-img' src="./img/artwork/dragon.jpg" alt='image of a person in a dragons cave'>
+                <img class='artwork-img' src="./img/artwork/name.gif" alt='image of who I am created for the old site using P5js'>
+
             </div>
         </section>
     </div>
@@ -218,6 +230,26 @@
         <section class="section-positioning" id="contact">
             <div class="paragraph-positioning">
                 <h2 class="">CON<span>TACT</span></h2>
+
+                <form action="#" method="post">
+                        <div class="field">
+                          <input type="text" id="name" name="name" placeholder="Name?" autofocus/>
+                          <label for="name">Name</label>
+                        </div>
+
+                        <div class="field">
+                          <input type="text" id="email" name="email" placeholder="E-Mail?" />
+                          <label for="email">E-Mail</label>
+                        </div>
+
+                        <div class="field">
+                          <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
+                          <label for="msg">Your Message</label>
+                        </div>
+
+                        <input class="button" type="submit" value="Send" />
+                      </form>
+                    
                 
             </div>
         </section>
@@ -226,6 +258,7 @@
     <!-- JavaScript/jQuery  -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="./js/active_nav.js"></script>
+    <script type="text/javascript" src="./js/artwork.js"></script>
     <script type="text/javascript" src="./js/responsive_nav.js"></script>
     <script type="text/javascript" src="./js/smooth_scroll.js"></script>
 </body>

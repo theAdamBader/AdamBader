@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adam Bader | Portfolio</title>
 
-    <!-- CSS -->
+        <!-- CSS -->
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
 
         <!-- STYLESHEETS -->
         <link href="/my_style.64cda26a.css" rel="stylesheet">
         <link href="/pre_load.e9ef910b.css" rel="stylesheet">
+        <link href="/artwork.45075f44.css" rel="stylesheet">
+        <link href="/contactform.845fcb30.css" rel="stylesheet">
 
-<script src="/my_style.64cda26a.js"></script><script src="/pre_load.e9ef910b.js"></script></head>
+<script src="/my_style.64cda26a.js"></script><script src="/pre_load.e9ef910b.js"></script><script src="/artwork.45075f44.js"></script><script src="/contactform.845fcb30.js"></script></head>
 <body>
 
     <!-- Pre-loader -->
@@ -60,9 +62,11 @@
                     <li>
                         <a class="navtext" href="#portfolio">UNIVERSITY PROJECTS</a>
                         </li>
+                    <div class="future-update">
                     <li> 
                         <a class="navtext" href="#projects">PROJECTS</a>
                     </li>
+                    </div>
                     <li> 
                         <a class="navtext" href="#art">ARTWORK</a>
                     </li>
@@ -175,6 +179,7 @@
     </div>
 
     <!-- personal projects -->
+    <div class="future-update">
     <div class="container">
         <section class="section-positioning" id="projects">
             <div class="paragraph-positioning">
@@ -202,13 +207,20 @@
             </div>
         </section>
     </div>
+    </div>
 
     <!-- art projects -->
     <div class="container">
         <section class="section-positioning" id="art">
             <div class="paragraph-positioning">
                 <h2 class="">ART<span>WORK</span></h2>
-                
+
+                <img class="artwork-img" src="/knight.f6c10a01.jpg" alt="knight made using Aseprite">
+                <img class="artwork-img" src="/necromancer.2b611856.jpg" alt="necromancer made using Aseprite">
+                <img class="artwork-img" src="/the_void.998267d7.jpg" alt="image of person in the void">
+                <img class="artwork-img" src="/dragon.7bf0fc66.jpg" alt="image of a person in a dragons cave">
+                <img class="artwork-img" src="/name.679ac6d7.gif" alt="image of who I am created for the old site using P5js">
+
             </div>
         </section>
     </div>
@@ -218,6 +230,26 @@
         <section class="section-positioning" id="contact">
             <div class="paragraph-positioning">
                 <h2 class="">CON<span>TACT</span></h2>
+
+                <form action="#" method="post">
+                        <div class="field">
+                          <input type="text" id="name" name="name" placeholder="Name?" autofocus="">
+                          <label for="name">Name</label>
+                        </div>
+
+                        <div class="field">
+                          <input type="text" id="email" name="email" placeholder="E-Mail?">
+                          <label for="email">E-Mail</label>
+                        </div>
+
+                        <div class="field">
+                          <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
+                          <label for="msg">Your Message</label>
+                        </div>
+
+                        <input class="button" type="submit" value="Send">
+                      </form>
+                    
                 
             </div>
         </section>
@@ -226,6 +258,7 @@
     <!-- JavaScript/jQuery  -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="/active_nav.c0edbd1b.js"></script>
+    <script type="text/javascript" src="/artwork.1576bcf6.js"></script>
     <script type="text/javascript" src="/responsive_nav.91f1e804.js"></script>
     <script type="text/javascript" src="/smooth_scroll.e144b752.js"></script>
 </body>
