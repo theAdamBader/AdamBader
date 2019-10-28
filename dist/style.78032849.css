@@ -281,6 +281,23 @@ body {
     color: #333333;
   }
   
+  .build-span:before {
+    content: "Design";
+    animation: build infinite 1.5s;
+  }
+
+  @keyframes build {
+    0% {
+      content: "Create";
+    }
+    50% {
+      content: "Build";
+    }
+    100% {
+      content: "Design";
+    }
+  }
+
   .change-span:before {
     content: "Experiences";
     animation: change infinite 1.5s;
@@ -591,41 +608,40 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
+    
   }
   .social-buttons li {
-    margin: 20px;
+    margin: 40px;
   }
   .social-buttons .twitter-colour {
-    background-image: url(/twitter_hover.f5168215.png);
-    border-radius: 100%;
+    color: #00acee ;
+    padding: 20px;
   }
   .social-buttons .twitter-colour:hover {
-    background-image: url(/twitter.c4d56891.png);
-    background-color: #000000;
-  }
-  .social-buttons .gitHub-colour {
-    background-image: url(/github_hover.1c5d7461.png);
-    border-radius: 100%;
-  }
-  .social-buttons .gitHub-colour:hover {
-    background-image: url(/github.4ad1b237.png);
-    background-color: #000000;
+    background-color: #00acee ;
+    color: #ffffff;
+    border-radius: 20%;
+    padding: 20px;
   }
   .social-buttons .linkedIn-colour {
-    background-image: url(/linkedIn.ad4bda8d.png);
-    border-radius: 100%;
+    color: #0e76a8;
+    padding: 20px;
   }
   .social-buttons .linkedIn-colour:hover {
-    background-image: url(/linkedIn_hover.4598124a.png);
-    background-color: #000000;
+    background-color: #0e76a8;
+    color: #ffffff;
+    border-radius: 20%;
+    padding: 20px;
   }
-  .social-buttons .gmail-colour {
-    background-image: url(/gmail.be00d15f.png);
-    border-radius: 100%;
+  .social-buttons .gitHub-colour {
+    color: #6e5494;
+    padding: 20px;
   }
-  .social-buttons .gmail-colour:hover {
-    background-image: url(/gmail_hover.1b9a3dbe.png);
-    background-color: #000000;
+  .social-buttons .gitHub-colour:hover {
+    background-color: #6e5494 ;
+    color: #ffffff;
+    border-radius: 20%;
+    padding: 20px;
   }
 
 /*# sourceMappingURL=/style.78032849.css.map */

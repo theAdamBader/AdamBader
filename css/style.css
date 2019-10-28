@@ -281,6 +281,23 @@ body {
     color: #333333;
   }
   
+  .build-span:before {
+    content: "Design";
+    animation: build infinite 1.5s;
+  }
+
+  @keyframes build {
+    0% {
+      content: "Create";
+    }
+    50% {
+      content: "Build";
+    }
+    100% {
+      content: "Design";
+    }
+  }
+
   .change-span:before {
     content: "Experiences";
     animation: change infinite 1.5s;
@@ -591,39 +608,38 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
+    
   }
   .social-buttons li {
-    margin: 20px;
+    margin: 40px;
   }
   .social-buttons .twitter-colour {
-    background-image: url(../img/social_icons/twitter_hover.png);
-    border-radius: 100%;
+    color: #00acee ;
+    padding: 20px;
   }
   .social-buttons .twitter-colour:hover {
-    background-image: url(../img/social_icons/twitter.png);
-    background-color: #000000;
-  }
-  .social-buttons .gitHub-colour {
-    background-image: url(../img/social_icons/github_hover.png);
-    border-radius: 100%;
-  }
-  .social-buttons .gitHub-colour:hover {
-    background-image: url(../img/social_icons/github.png);
-    background-color: #000000;
+    background-color: #00acee ;
+    color: #ffffff;
+    border-radius: 20%;
+    padding: 20px;
   }
   .social-buttons .linkedIn-colour {
-    background-image: url(../img/social_icons/linkedIn.png);
-    border-radius: 100%;
+    color: #0e76a8;
+    padding: 20px;
   }
   .social-buttons .linkedIn-colour:hover {
-    background-image: url(../img/social_icons/linkedIn_hover.png);
-    background-color: #000000;
+    background-color: #0e76a8;
+    color: #ffffff;
+    border-radius: 20%;
+    padding: 20px;
   }
-  .social-buttons .gmail-colour {
-    background-image: url(../img/social_icons/gmail.png);
-    border-radius: 100%;
+  .social-buttons .gitHub-colour {
+    color: #6e5494;
+    padding: 20px;
   }
-  .social-buttons .gmail-colour:hover {
-    background-image: url(../img/social_icons/gmail_hover.png);
-    background-color: #000000;
+  .social-buttons .gitHub-colour:hover {
+    background-color: #6e5494 ;
+    color: #ffffff;
+    border-radius: 20%;
+    padding: 20px;
   }

@@ -122,7 +122,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 $(document).on('click', 'nav li', function () {
   // The member of the function li .active will be removed and added onto an li child within the nav function
   $(this).addClass('active').siblings().removeClass('active');
-}); // Sets the animation for 2200 milliseconds for it to animated and fade to the page
+}); // Set the pre-loader animation for 2200 milliseconds for it to animated and fade to the page
 
 setTimeout(function () {
   $('.loader').fadeToggle();
@@ -155,7 +155,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61515" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53080" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
