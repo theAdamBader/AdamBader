@@ -1,75 +1,54 @@
-.social-btns {
-    overflow: hidden;
+/* SOCIAL ICONS */
+.social-buttons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  display: inline-block;
+  border-radius: 100%;
+  padding: 20px;
+  margin: 40px;
+}
+
+.twitter-colour {
+  color: #00acee;
+}
+.twitter-colour:hover {
+  background-color: #00acee;
+  color: #ffffff;
+}
+
+.linkedIn-colour {
+  color: #0e76a8;
+}
+.linkedIn-colour:hover {
+  background-color: #0e76a8;
+  color: #ffffff;
+}
+
+.gitHub-colour {
+  color: #6e5494;
+}
+.gitHub-colour:hover {
+  background-color: #6e5494;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+  .social-buttons {
+    font-size: 10px;
+    display: flex;
   }
-  .social-btns .btn, .social-btns .btn:before, .social-btns .btn .fa {
-    transition: all 0.35s;
-    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
-  }
-  .social-btns .btn:before {
-    top: 90%;
-    left: -110%;
-  }
-  .social-btns .btn .fa {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-  .social-btns .btn.facebook:before {background: #3b5998;}
-  .social-btns .btn.facebook .fa {color: #3b5998;}
-  
-  .social-btns .btn.twitter:before {background: #3cf;}
-  .social-btns .btn.twitter .fa {color: #3cf;}
-  
-  .social-btns .btn.google:before {background: #dc4a38;}
-  .social-btns .btn.google .fa {color: #dc4a38;}
-  
-  .social-btns .btn.linkedin:before {background: #0077B5;}
-  .social-btns .btn.linkedin .fa {color: #0077B5;}
-  
-  .social-btns .btn.skype:before {background: #00aff0;}
-  .social-btns .btn.skype .fa {color: #00aff0;}
-  
-  .social-btns .btn:focus:before, .social-btns .btn:hover:before {
-    top: -10%;
-    left: -10%;
-  }
-  .social-btns .btn:focus .fa, .social-btns .btn:hover .fa {
-    color: #fff;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  .social-btns {
-    font-size: 0;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .social-btns .btn {
+
+  .social-icon {
     display: inline-block;
-    background: #fff;
-    width: 65px;
-    height: 65px;
-    line-height: 65px;
-    margin: 5px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: 30%;
-    box-shadow: 0 7px 18px -7px rgba(0,0,0,0.18);
-    opacity: 0.99;
+    border-radius: 100%;
+    padding: 15px;
+    margin: 10px;
   }
-  .social-btns .btn:before {
-    content: '';
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  .social-btns .btn .fa {
-    font-size: 38px;
-    vertical-align: middle;
-  }
+}
 
 /*# sourceMappingURL=/social_icons.1968e6b1.css.map */

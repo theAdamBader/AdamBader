@@ -1,0 +1,40 @@
+/* SOCIAL ICONS */
+.social-buttons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  display: inline-block;
+  border-radius: 100%;
+  padding: 20px;
+  margin: 40px;
+}
+
+.twitter-colour {
+  color: #00acee;
+}
+.twitter-colour:hover {
+  background-color: #00acee;
+  color: #ffffff;
+}
+
+.linkedIn-colour {
+  color: #0e76a8;
+}
+.linkedIn-colour:hover {
+  background-color: #0e76a8;
+  color: #ffffff;
+}
+
+.gitHub-colour {
+  color: #6e5494;
+}
+.gitHub-colour:hover {
+  background-color: #6e5494;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=/social_icons.6928ecbc.css.map */
