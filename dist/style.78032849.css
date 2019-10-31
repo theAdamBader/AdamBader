@@ -610,6 +610,10 @@ body {
     h1{
       font-size: 3em;
     }
+    
+    .container{
+      max-width: 200px;
+    }
 
     .paragraph-positioning{
       top: 10px;
