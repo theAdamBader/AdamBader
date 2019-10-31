@@ -604,3 +604,14 @@ body {
       font-size: 0.8em;
     }
   }
+
+  @media screen and (max-width: 350px) {
+
+    h1{
+      font-size: 3em;
+    }
+
+    .paragraph-positioning{
+      top: 10px;
+    }
+  }
