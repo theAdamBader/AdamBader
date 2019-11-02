@@ -9,8 +9,7 @@ body {
     height: auto;
     min-width: 65%;
     margin-right: auto;
-    margin-left: 400px;
-    float: left;
+    margin-left: 350px;
     overflow-x: auto;
   }
   
@@ -27,8 +26,8 @@ body {
   }
   .about-container .paragraph-positioning {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10%;
+    transform: translateY(-10%);
   }
   
   .section-positioning {
@@ -51,8 +50,6 @@ body {
     flex-flow: column wrap;
     padding: 10px;
     list-style: none;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
   }
   
   .vid-display {
@@ -94,13 +91,13 @@ body {
     position: fixed;
     width: 325px;
     height: 100vh;
-    left: 0px;
+    left: 0;
     z-index: 1000;
     display: block;
     background-color: #000000;
-    text-align: center;
   }
   .sidebar .positioning {
+    text-align: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -266,8 +263,6 @@ body {
   
   h1 {
     font-size: 6rem;
-    margin-block-start: 0em;
-    margin-block-end: -0.4em;
   }
   
   h3 {
@@ -407,8 +402,6 @@ body {
     font-size: 80px;
     font-family: "Amatic SC", cursive;
     text-align: center;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
   }
   
   .title-font {
@@ -515,8 +508,7 @@ body {
       height: 100vh;
       width: 100%;
       margin-right: auto;
-      margin-left: 0;
-      float: left;
+      margin-left: 50px;
     }
   
     .about-container {
@@ -582,6 +574,10 @@ body {
   }
   
   @media screen and (max-width: 500px) {
+    h1{
+      font-size: 3em;
+    }
+
     .section-positioning {
       height: 100%;
       width: 100%;
@@ -605,21 +601,6 @@ body {
 
     .paragraph {
       font-size: 0.8em;
-    }
-  }
-
-  @media screen and (max-width: 350px) {
-
-    h1{
-      font-size: 3em;
-    }
-    
-    .container{
-      max-width: 200px;
-    }
-
-    .paragraph-positioning{
-      top: 10px;
     }
   }
 
