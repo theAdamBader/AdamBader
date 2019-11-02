@@ -6,11 +6,12 @@ body {
   }
   
   .container {
-    height: 100vh;
-    width: 70%;
+    height: auto;
+    min-width: 65%;
     margin-right: auto;
     margin-left: 400px;
     float: left;
+    overflow-x: auto;
   }
   
   .wrapper {
@@ -91,14 +92,16 @@ body {
   /* NAVBAR */
   .sidebar {
     position: fixed;
-    width: 350px;
+    width: 325px;
     height: 100vh;
     left: 0px;
+    z-index: 1000;
+    display: block;
     background-color: #000000;
     text-align: center;
   }
   .sidebar .positioning {
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
