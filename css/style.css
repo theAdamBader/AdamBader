@@ -8,7 +8,8 @@ body {
   .container {
     height: auto;
     min-width: 65%;
-    margin-right: auto;
+    max-width: 100%;
+    margin-right: 350px;
     margin-left: 350px;
     overflow-x: auto;
   }
@@ -507,8 +508,8 @@ body {
     .container {
       height: 100vh;
       width: 100%;
-      margin-right: auto;
-      margin-left: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
     }
   
     .about-container {
@@ -600,6 +601,6 @@ body {
     }
 
     .paragraph {
-      font-size: 0.8em;
+      font-size: 3vw;
     }
   }
