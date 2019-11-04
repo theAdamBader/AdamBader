@@ -567,6 +567,10 @@ body {
     h3 {
       font-size: 1.5rem;
     }
+
+    .paragraph {
+      font-size: 3vw;
+    }
   
     .contact-font {
       font-size: 0.5rem;
@@ -598,10 +602,6 @@ body {
     .pro-img img {
       height: auto;
       min-width: 125px;
-    }
-
-    .paragraph {
-      font-size: 3vw;
     }
   }
 
