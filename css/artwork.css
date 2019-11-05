@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 800px) {
   .artwork-img{
-    max-width: 25%;
-    max-height: 25%;
+    max-width: 65%;
+    max-height: 65%;
   }
 }
