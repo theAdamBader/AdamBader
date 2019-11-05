@@ -37,9 +37,9 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .social-buttons {
-    font-size: 10px;
+    font-size: 2vw;
     display: flex;
   }
 
