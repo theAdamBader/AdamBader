@@ -117,79 +117,69 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"js/jquery.js":[function(require,module,exports) {
+//SCROLLING 
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault(); // Store hash
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+      var hash = this.hash; // Using jQuery's animate() method to add smooth page scroll
+      // Set the animation for 1000 milliseconds for it to scroll to the specified area
 
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function () {});
     }
-  }
+  });
+}); //ARTWORK
 
-  return '/';
-}
+$(document).ready(function () {
+  $(".artwork-img").click(function () {
+    $src = $(this).attr("src");
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
+    if (!$("#light-box").length > 0) {
+      $("body").append("<div id='light-box'><span class='close-img'>&times</span><img src=''></div>");
+      $("#light-box").show();
+      $("#light-box img").attr("src", $src);
+    } else {
+      $("#light-box").show();
+      $("#light-box img").attr("src", $src);
     }
+  });
+  $("body").on("click", "#light-box span", function () {
+    $("#light-box").hide();
+  });
+}); //CLASS LI
+// When click on an active li function then the colour will be highlighted as blue
 
-    cssTimeout = null;
-  }, 50);
-}
+$(document).on('click', 'nav li', function () {
+  // The member of the function li .active will be removed and added onto an li child within the nav function
+  $(this).addClass('active').siblings().removeClass('active');
+}); //PRELOADER
+// Set the pre-loader animation for 2200 milliseconds for it to animated and fade to the page
+// setTimeout(function(){
+//   $('.loader').fadeToggle();
+// }, 1800);
+//HAMBURGER
+// Opens the responsive menu
 
-module.exports = reloadCSS;
-},{"./bundle-url":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/artwork.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
+$('.hamburger').click(function () {
+  $(this).toggleClass('active open');
+  $('.sidebar').toggleClass('open');
+  $('.sidebar li').toggleClass('fade');
+}); // Closes the responsive menu on anchor click
 
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+$('.sidebar li').on('click', function () {
+  $(".sidebar").toggleClass('open');
+  $('.sidebar li').toggleClass('fade');
+  $(".hamburger").toggleClass('open');
+  $(".hamburger").removeClass("active");
+});
+},{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -393,5 +383,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/artwork.45075f44.js.map
+},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/jquery.js"], null)
+//# sourceMappingURL=/jquery.87f08830.js.map

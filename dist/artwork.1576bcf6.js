@@ -118,23 +118,22 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/artwork.js":[function(require,module,exports) {
-$(document).ready(function () {
-  $(".artwork-img").click(function () {
-    $src = $(this).attr("src");
-
-    if (!$("#light-box").length > 0) {
-      $("body").append("<div id='light-box'><span class='close-img'>&times</span><img src=''></div>");
-      $("#light-box").show();
-      $("#light-box img").attr("src", $src);
-    } else {
-      $("#light-box").show();
-      $("#light-box img").attr("src", $src);
-    }
-  });
-  $("body").on("click", "#light-box span", function () {
-    $("#light-box").hide();
-  });
-});
+// $(document).ready(function() {
+//   $(".artwork-img").click(function() {
+//     $src = $(this).attr("src");
+//     if (!$("#light-box").length > 0) {
+//       $("body").append("<div id='light-box'><span class='close-img'>&times</span><img src=''></div>");
+//       $("#light-box").show();
+//       $("#light-box img").attr("src", $src);
+//     } else {
+//       $("#light-box").show();
+//       $("#light-box img").attr("src", $src);
+//     }
+//   });
+//   $("body").on("click", "#light-box span", function() {
+//     $("#light-box").hide();
+//   });
+// });
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -163,7 +162,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65109" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61759" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
