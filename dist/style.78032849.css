@@ -170,7 +170,7 @@ ol li a {
   top: 50%;
   left: 50%;
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 500;
   color: #067cca;
   z-index: 2;
   transform: translate(-50%, -50%);
