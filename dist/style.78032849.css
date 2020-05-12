@@ -30,8 +30,8 @@ body {
 
 .section-positioning .paragraph-positioning {
   position: relative;
-  top: 20%;
-  transform: translateY(-20%);
+  top: 0;
+  transform: translateY(0);
 }
 
 .pro-img img {
