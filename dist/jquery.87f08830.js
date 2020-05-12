@@ -178,10 +178,10 @@ $(document).ready(function () {
   });
 }); //PRELOADER
 // Set the pre-loader animation for 2200 milliseconds for it to animated and fade to the page
-// setTimeout(function(){
-//   $('.loader').fadeToggle();
-// }, 1800);
-//HAMBURGER
+
+setTimeout(function () {
+  $('.loader').fadeToggle();
+}, 5000); //HAMBURGER
 // Opens the responsive menu
 
 $('.hamburger').click(function () {
@@ -224,7 +224,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62332" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62476" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
