@@ -8,15 +8,12 @@
     
     <link rel="icon" href="./img/favicon.png">
 
-        <!-- CSS -->
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
 
         <!-- STYLESHEETS -->
         <link href="./css/style.css" rel="stylesheet">
-        <link href="./css/pre_load.css" rel="stylesheet">
         <link href="./css/artwork.css" rel="stylesheet">
-        <link href="./css/social_icons.css" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/7806619c2b.js" crossorigin="anonymous"></script>
 
@@ -24,27 +21,9 @@
 <body>
 
     <!-- Pre-loader -->
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="loader-line-wrap">
-                <div class="loader-line"></div>
-            </div>
-            <div class="loader-line-wrap">
-                <div class="loader-line"></div>
-            </div>
-            <div class="loader-line-wrap">
-                <div class="loader-line"></div>
-            </div>
-            <div class="loader-line-wrap">
-                <div class="loader-line"></div>
-            </div>
-            <div class="loader-line-wrap">
-                <div class="loader-line"></div>
-            </div>
-            <div class="loader-line-wrap">
-                <div class="loader-line"></div>
-            </div>
-        </div>
+    <div class="loader inner-loader">
+        <div class="loader-container"></div>
+        <p class='loader-title'>ADAM BADER</p>
     </div>
 
     <!-- Nav -->
@@ -58,31 +37,32 @@
         <div class= "sidebar">
             <div class="positioning">
                 <img class="img-size" src="img/myself.jpg" alt="">
-
-                <ul>
-                    <li class="active">
-                        <a class="navtext" href="#about">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="navtext" href="#portfolio">UNIVERSITY PROJECTS</a>
-                    </li>
-                    <!-- <li> 
-                        <a class="navtext" href="#projects">PROJECTS</a>
-                    </li> -->
-                    <li> 
-                        <a class="navtext" href="#art">ARTWORK</a>
-                    </li>
-                    <li> 
-                        <a class="navtext" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a class="active" href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">UNIVERSITY PROJECTS</a>
+                        </li>
+                        <!-- <li> 
+                            <a href="#projects">PROJECTS</a>
+                        </li> -->
+                        <li> 
+                            <a href="#art">ARTWORK</a>
+                        </li>
+                        <li> 
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Intro -->
     <div class="container" id="about">
-        <section class="about-container">
+        <section class="container-positioning">
             <div class="paragraph-positioning">
                 <h1>Adam <span>Bader</span></h1>
                 <h2>Games designer, Programmer & Artist</h2><br>
@@ -92,8 +72,8 @@
                     programmer who strives to write clean, cache friendly code. I’m always eager to 
                     learn and leverage my skills to facilitate unforgettable gameplay and narrative driven experiences. <br><br>
                     Graduate in BSc Games Programmer at Goldsmiths, University of London. <br><br>
-                    Programming languages: C++, C#, Java, HTML5, CSS, SASS, JavaScript and PHP.<br><br>
-                    Software skills: Unity, Unreal Engine, Visual Studio, OpenFrameWorks, GameMaker, P5JS, Processing.
+                    Programming languages: C++, C#, Java, HTML, CSS, Sass, JavaScript.<br><br>
+                    Software skills: Unity, Unreal Engine, Visual Studio, OpenFrameworks, GameMaker, P5JS, Processing.
                 </p>
             </div>
         </section>
@@ -102,77 +82,76 @@
     <!-- Uni projects -->
     <div class="container" id="portfolio">
         <section class="section-positioning">
-            <div class="paragraph-positioning">
+            
             <h2 class="">GOLDSMITHS, <span>UNIVERSITY OF LONDON</span></h2>
-               <div class="row">    
-                    <ol class="grid-container">    
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./alienated.html">ALIENATED</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/alienated.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/tron.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./runforest.html">RUN FOREST RUN</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/run_forest_run.jpg" alt="">
-                            </div>          
-                        </li>
+            <div class="row">    
+                <ol class="grid-container">    
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./alienated.html">ALIENATED</a>
+                        </div> 
+                        <div class="img-container">
+                            <img class="img-animation" src="img/thumbnails/alienated.jpg" alt="">
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
+                        </div> 
+                        <div class="img-container">
+                            <img class="img-animation" src="img/thumbnails/tron.jpg" alt="">
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./runforest.html">RUN FOREST RUN</a>
+                        </div> 
+                        <div class="img-container">
+                            <img class="img-animation" src="img/thumbnails/run_forest_run.jpg" alt="">
+                        </div>          
+                    </li>
 
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./invasionforce.html">INVASION ALPHA FORCE</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/invasion.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./flyaway.html">FLY AWAY</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/flyaway.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./fingergun.html">FINGER GUN</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/fingergun.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./cube.html">3x3x3 LED CUBE (ML)</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/cube.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./lavieestbelle.html">LA VIE EST BELLE (VR)</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/lavie.jpg" alt="">
-                            </div>          
-                        </li>
-                    </ol>
-                </div>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./invasionforce.html">INVASION ALPHA FORCE</a>
+                        </div> 
+                        <div class="img-container">
+                            <img class="img-animation" src="img/thumbnails/invasion.jpg" alt="">
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./flyaway.html">FLY AWAY</a>
+                        </div> 
+                        <div class="img-container">
+                            <img class="img-animation" src="img/thumbnails/flyaway.jpg" alt="">
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./fingergun.html">FINGER GUN</a>
+                        </div> 
+                        <div class="img-container">
+                            <img class="img-animation" src="img/thumbnails/fingergun.jpg" alt="">
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./cube.html">3x3x3 LED CUBE (ML)</a>
+                        </div> 
+                        <div class="img-container">
+                            <img class="img-animation" src="img/thumbnails/cube.jpg" alt="">
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./lavieestbelle.html">LA VIE EST BELLE (VR)</a>
+                        </div> 
+                        <div class="img-container">
+                            <img class="img-animation" src="img/thumbnails/lavie.jpg" alt="">
+                        </div>          
+                    </li>
+                </ol>
             </div>
         </section>
     </div>
@@ -209,23 +188,23 @@
     <!-- art projects -->
     <div class="container" id="art">
         <section class="section-positioning">
-            <div class="paragraph-positioning">
-                <h2 class="">ART<span>WORK</span></h2>
 
-                <img class='artwork-img' src="./img/artwork/knight.jpg" alt='knight made using Aseprite'>
-                <img class='artwork-img' src="./img/artwork/necromancer.jpg" alt='necromancer made using Aseprite'>
-                <img class='artwork-img' src="./img/artwork/the_void.jpg" alt='image of person in the void'>
-                <img class='artwork-img' src="./img/artwork/dragon.jpg" alt='image of a person in a dragons cave'>
-                <img class='artwork-img' src="./img/artwork/name.gif" alt='image that I created for the old site using P5js'>
-                <img class='artwork-img' src="./img/artwork/apple.jpg" alt='image of an apple that I am created for the la vie est belle logo'>
-
-            </div>
+            <h2 class="">ART<span>WORK</span></h2>
+            <img class='artwork-img' src="./img/artwork/knight.jpg" alt='knight made using Aseprite'>
+            <img class='artwork-img' src="./img/artwork/necromancer.jpg" alt='necromancer made using Aseprite'>
+            <img class='artwork-img' src="./img/artwork/the_void.jpg" alt='image of person in the void'>
+            <img class='artwork-img' src="./img/artwork/dragon.jpg" alt='image of a person in a dragons cave'>
+            <img class='artwork-img' src="./img/artwork/name.gif" alt='image that I created for the old site using P5js'>
+            <img class='artwork-img' src="./img/artwork/apple.jpg" alt='image of an apple that I am created for the la vie est belle logo'>
+            <img class='artwork-img' src="./img/artwork/beauty.jpg" alt='an image of my brother in four different shades. Inspried by Andy Warhol'>
+            <img class='artwork-img' src="./img/artwork/nike_one.jpg" alt='image of Nike Air Jordan One that has been modified to give an adverstisment look'>              
+            
         </section>
     </div>
 
     <!-- contact -->
     <div class="container" id="contact">
-        <section class="about-container">
+        <section class="container-positioning">
             <div class="paragraph-positioning">
 
                 <h3>Let's <span class="build-span"></span> something great!</h3>

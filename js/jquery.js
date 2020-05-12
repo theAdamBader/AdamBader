@@ -1,24 +1,47 @@
-//SCROLLING 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+//SCROLLING
+$(document).ready(function () {
+  $(document).on("scroll", onScroll);
+  
+  //smoothscroll
+  $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+      
+      $('a').each(function () {
+          $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+    
+      var target = this.hash,
+          menu = target;
+      $target = $(target);
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top+2
+      }, 1500, 'swing', function () {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // Set the animation for 1000 milliseconds for it to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
-      });
-    }
+      $(document).on("scroll", onScroll);
+    });
   });
+});
+
+function onScroll(event){
+  var scrollPos = $(document).scrollTop();
+  $('#menu a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#menu ul li a').removeClass("active");
+          currLink.addClass("active");
+      }
+      else{
+          currLink.removeClass("active");
+      }
+  });
+}
+
+//REFRESH PAGE TO THE TOP
+$(document).ready(function(){
+  $(this).scrollTop(0);
 });
 
 //ARTWORK
@@ -39,13 +62,6 @@ $(document).ready(function() {
   $("body").on("click", "#light-box span", function() {
     $("#light-box").hide();
   });
-});
-
-//CLASS LI
-// When click on an active li function then the colour will be highlighted as blue
-$(document).on('click', 'nav li', function(){
-  // The member of the function li .active will be removed and added onto an li child within the nav function
-  $(this).addClass('active').siblings().removeClass('active');
 });
 
 //PRELOADER

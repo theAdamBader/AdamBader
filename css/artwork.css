@@ -2,10 +2,9 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   top: 0;
   left: 0;
-  color: #fff;
   z-index: 9999;
 }
 
@@ -21,14 +20,13 @@
 }
 
 .artwork-img {
-  max-width: 280px;
-  max-height: 200px;
+  max-width: 320px;
+  max-height: 240px;
+  padding: 1px;
+  margin: 5px;
   filter: grayscale();
   transition: 0.3s;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 5px;
-  box-shadow: 0px 2px 3px #000;
+  cursor: pointer;
 }
 
 .artwork-img:hover{
@@ -54,5 +52,6 @@
   .artwork-img{
     max-width: 65%;
     max-height: 65%;
+    filter: none;
   }
 }
