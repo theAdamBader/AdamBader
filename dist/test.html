@@ -3,40 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-      <link href="/img_slideshow.7f4c722c.css" rel="stylesheet">
-<script src="/img_slideshow.7f4c722c.js"></script></head>
+    <link rel="stylesheet" href="/nav.96bc43ad.css">
+<script src="/nav.96bc43ad.js"></script></head>
 <body>
+ 
+    <svg id="strokes" class="ham-svg" viewBox="0 0 100 100" width="80">
+        <path class="line top" d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568"></path>
+        <path class="line middle" d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7"></path>
+        <path class="line bottom" d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0"></path>
+    </svg>
+
+    <div id="overlay">
+        
+        <div class="overlay-content">
+            <a href="#about">About</a>
+            <a href="#portfolio">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        
+    </div>
+
+    <div id="blur">
+        <h2>Fullscreen Overlay Nav Example</h2>
+        <p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+        <p>In this example, the navigation menu will slide in, from left to right:</p> 
     
-        <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="/profile.fecc9461.jpg" style="width:100%">
-                </div>
-                  
-                <div class="mySlides fade">
-                <img src="/profile.fecc9461.jpg" style="width:100%">
-                </div>
-                
-                <div class="mySlides fade">
-                <img src="/profile.fecc9461.jpg" style="width:100%">
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                
+
+    <div class="container" id="about">
+        <section class="container-positioning">
+            <div class="paragraph-positioning">
+                <h1>Adam <span>Bader</span></h1>
+                <h2>Games designer, Programmer & Artist</h2><br>
+                <p class="paragraph">
+                    I am a passionate programmer and artist who is interested in the dynamics, 
+                    mechanics and aesthetics of a program and its accessibility; a team oriented 
+                    programmer who strives to write clean, cache friendly code. I’m always eager to 
+                    learn and leverage my skills to facilitate unforgettable gameplay and narrative driven experiences. <br><br>
+                    Graduate in BSc Games Programmer at Goldsmiths, University of London. <br><br>
+                    Programming languages: C++, C#, Java, HTML, CSS, Sass, JavaScript.<br><br>
+                    Software skills: Unity, Unreal Engine, Visual Studio, OpenFrameworks, GameMaker, P5JS, Processing.
+                </p>
             </div>
-                <br>
-                
-                <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
+        </section>
+    </div>
+    
+    <!-- Uni projects -->
+    <div class="container">
+        <section class="section-positioning">
+            <div class="paragraph-positioning">
+                <h2 class="">GOLDSMITHS, <span>UNIVERSITY OF LONDON</span></h2>
+                <div class="row">    
+                    <ol class="grid-container">    
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/alienated.html">ALIENATED</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/alienated.f9ea32dc.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/supertron.html">TRON: THE UPGRADE</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/tron.1855fcc2.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/runforest.html">RUN FOREST RUN</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/run_forest_run.c3b54c36.jpg" alt="">
+                            </div>          
+                        </li>
+
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/invasionforce.html">INVASION ALPHA FORCE</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/invasion.9a0ce9b7.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/flyaway.html">FLY AWAY</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/flyaway.6872b676.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/fingergun.html">FINGER GUN</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/fingergun.153adcb1.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/cube.html">3x3x3 LED CUBE</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/cube.953a472a.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/lavieestbelle.html">LA VIE EST BELLE (VR)</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/lavie.e1ab50f4.jpg" alt="">
+                            </div>          
+                        </li>
+                    </ol>
                 </div>
-                  
-             
-          
-            <script type="text/javascript" src="/img_slide.941842d2.js"></script>
+            </div>
+        </section>
+    </div>
+</div>
+
+    <!-- Uni projects -->
+    <div class="container">
+        <section class="section-positioning">
+            <div class="paragraph-positioning">
+                <h2 class="">GOLDSMITHS, <span>UNIVERSITY OF LONDON</span></h2>
+                <div class="row">    
+                    <ol class="grid-container">    
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/alienated.html">ALIENATED</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/alienated.f9ea32dc.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/supertron.html">TRON: THE UPGRADE</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/tron.1855fcc2.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/runforest.html">RUN FOREST RUN</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/run_forest_run.c3b54c36.jpg" alt="">
+                            </div>          
+                        </li>
+
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/invasionforce.html">INVASION ALPHA FORCE</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/invasion.9a0ce9b7.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/flyaway.html">FLY AWAY</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/flyaway.6872b676.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/fingergun.html">FINGER GUN</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/fingergun.153adcb1.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/cube.html">3x3x3 LED CUBE</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/cube.953a472a.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="/lavieestbelle.html">LA VIE EST BELLE (VR)</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="/lavie.e1ab50f4.jpg" alt="">
+                            </div>          
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- Uni projects -->
+        <div class="container" id="portfolio">
+            <section class="section-positioning">
+                <div class="paragraph-positioning">
+                    <h2 class="">GOLDSMITHS, <span>UNIVERSITY OF LONDON</span></h2>
+                    <div class="row">    
+                        <ol class="grid-container">    
+                            <li>
+                                <div class="each-list">
+                                    <a class="link-list" href="/alienated.html">ALIENATED</a>
+                                </div> 
+                                <div class="img-container">
+                                    <img class="img-animation" src="/alienated.f9ea32dc.jpg" alt="">
+                                </div>          
+                            </li>
+                            <li>
+                                <div class="each-list">
+                                    <a class="link-list" href="/supertron.html">TRON: THE UPGRADE</a>
+                                </div> 
+                                <div class="img-container">
+                                    <img class="img-animation" src="/tron.1855fcc2.jpg" alt="">
+                                </div>          
+                            </li>
+                            <li>
+                                <div class="each-list">
+                                    <a class="link-list" href="/runforest.html">RUN FOREST RUN</a>
+                                </div> 
+                                <div class="img-container">
+                                    <img class="img-animation" src="/run_forest_run.c3b54c36.jpg" alt="">
+                                </div>          
+                            </li>
+    
+                            <li>
+                                <div class="each-list">
+                                    <a class="link-list" href="/invasionforce.html">INVASION ALPHA FORCE</a>
+                                </div> 
+                                <div class="img-container">
+                                    <img class="img-animation" src="/invasion.9a0ce9b7.jpg" alt="">
+                                </div>          
+                            </li>
+                            <li>
+                                <div class="each-list">
+                                    <a class="link-list" href="/flyaway.html">FLY AWAY</a>
+                                </div> 
+                                <div class="img-container">
+                                    <img class="img-animation" src="/flyaway.6872b676.jpg" alt="">
+                                </div>          
+                            </li>
+                            <li>
+                                <div class="each-list">
+                                    <a class="link-list" href="/fingergun.html">FINGER GUN</a>
+                                </div> 
+                                <div class="img-container">
+                                    <img class="img-animation" src="/fingergun.153adcb1.jpg" alt="">
+                                </div>          
+                            </li>
+                            <li>
+                                <div class="each-list">
+                                    <a class="link-list" href="/cube.html">3x3x3 LED CUBE</a>
+                                </div> 
+                                <div class="img-container">
+                                    <img class="img-animation" src="/cube.953a472a.jpg" alt="">
+                                </div>          
+                            </li>
+                            <li>
+                                <div class="each-list">
+                                    <a class="link-list" href="/lavieestbelle.html">LA VIE EST BELLE (VR)</a>
+                                </div> 
+                                <div class="img-container">
+                                    <img class="img-animation" src="/lavie.e1ab50f4.jpg" alt="">
+                                </div>          
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/page-nav.d3ba37a6.js"></script>
+    
+
 </body>
 </html>

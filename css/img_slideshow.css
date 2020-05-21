@@ -1,45 +1,48 @@
 .slideshow-container {
-position: relative;
-max-width: 60%;
-margin-left: auto;
-margin-right: auto;
+  position: relative;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Hide the images by default */
 .the-slide {
-display: none;
+  display: none;
 }
 
 .the-slide img{
-width: 100%;
-margin: auto;
-margin-top: 110px;
+  width: 100%;
+  margin: auto;
+  margin-left: 50px;
+  margin-top: 120px;
 }
 
 /** Next & previous buttons */
 .prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: 250px;
-padding: 16px;
-color: #000000;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 250px;
+  padding: 16px;
+  margin-left: -75px;
+  margin-right: -200px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 .next {
-right: 0;
-border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-color: #067cca;
+  background-color: rgba(0,0,0,0.8);
+  color: #067cca;
 }
 
 

@@ -12,95 +12,105 @@
 
     <link rel="icon" href="/favicon.08708974.png">
 
-    <!-- CSS -->
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- STYLESHEETS -->
-    <link href="/style.78032849.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.78032849.css">
+    <link rel="stylesheet" href="/nav.96bc43ad.css">
 
-</head>
+<script src="/style.78032849.js"></script><script src="/nav.96bc43ad.js"></script></head>
 <body>
+    <svg id="strokes" class="ham-svg" viewBox="0 0 100 100" width="80">
+        <path class="line top" d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568"></path>
+        <path class="line middle" d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7"></path>
+        <path class="line bottom" d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0"></path>
+    </svg>
 
-<section class="wrapper">
-    <nav>
-        <ul>
-            <li>
-                <a href="/index.html#portfolio" class="close"></a>
-            </li>
-        </ul>
-    </nav>
-
-    <h1 class="headline-font">3x3x3 LED CUBE</h1>
-
-    <div class="the-box">
-        <div class="overlay">
-            <img src="/ComputerMonitor1.e43cdb9c.png" alt="">
-            <iframe width="640" height="385" src="https://www.youtube.com/embed/8t9WEwZWIrA" allowfullscreen=""></iframe>
-        </div> 
+    <div id="overlay">
         
-        <div class="text-container">
-            <div class="para-container">
-                <h1 class="title-font">OVERVIEW</h1>
-            
-                <p class="para-font"> 
-                    3x3x3 cube (solo project) is a physical project where a 3x3x3 LED cube has a variety of patterns that change 
-                    depending on the individual’s position, this is achieved using machine learning (k-nearest neighbour algorithm) 
-                    and three software (Arduino IDE, Processing and Wekinator). Arduino (C++) handles the hardware’s patterns and 
-                    communicates with a Processing (Java) sketch that executes patterns depending on the features set on Wekinator; 
-                    another Processing sketch handles the features and processes it through into Wekinator in which it learns the features 
-                    and outputs to the Processing sketch that communicates with Arduino. This is achieved by having Wekinator communicating 
-                    between both software using an OSC sender (input) and receiver (output).<br></p>  
-                <div class="pro-img">
-                    <div class="vid-display">
-                        <a href="https://www.youtube.com/embed/8t9WEwZWIrA" target="_blank">
-                        <img src="/yt.ab7947ea.png" alt="Link to Alienated Soure Code">
-                        </a>
-                        </div>                  
-                        <a href="https://github.com/theAdamBader/3x3x3-LED-Cube" target="_blank">
-                        <img src="/gitSoure.7b20ceb5.png" alt="Link to 3x3x3-LED-Cube Soure Code">
-                        </a>
-                </div> 
-            </div>
+        <div class="overlay-content">
+            <a href="/index.html">HOME</a>
+            <a href="#overview">OVERVIEW</a>
+            <a href="#design">DESIGN</a>
+            <a href="#implementation">IMPLEMENTATION</a>
         </div>
+        
     </div>
 
-        <div class="text-container">
-            <div class="para-container">                
-                <h1 class="title-font">DESIGN & IMPLIMENTATION</h1>
-                
-                <h2 class="subtitle-font">DESIGN</h2>
-                <p class="para-font">
-                    The design of the project was inspired by similar projects; however, none of them were interactive as mine. 
-                    I started with the schematics for the project in which it needed a cover for the cube and the Arduino uno, 
-                    I started with using a cardboard as it was an effective way to get the measurements correctly and quicker to 
-                    laser cut to see. After the designing the correct measurements for the project, I started using plywood for the 
-                    cube and a plastic cover, made using a 3D printer, to cover the Arduino uno. 
-                </p>
-                
-                <div class="cube-img">
-                    <img src="/cube.c3947cb5.PNG" alt="An image of the 3 by 3 by 3 LED cube">
-                    <img src="/schematics.3997a2e6.PNG" alt="An image of the schematics">
-                </div>
+<div id="blur">
+    <section class="wrapper">
+        <h1 class="headline-font">3x3x3 LED CUBE</h1>
 
-                <h2 class="subtitle-font">IMPLIMENTATION</h2>
-                <p class="para-font">
-                    The implementation for this project involved using three different software: Processing, Arduino and Wekinator. 
-                    Using Processing, I programmed a sketch that would run a pixelated video and a signal that would be called onto 
-                    Wekinator as a feature that would be recorded and ran when the other sketch was complete; then programmed an Arduino 
-                    sketch that would communicate with another Processing sketch and the Arduino hardware that would communicate and execute 
-                    the pattern depending on the position of the individual. Once that was complete, Wekinator then communicated with two 
-                    different Processing sketches, one was the pixelated video for the features using k-nearest neighbour algorithm and the 
-                    other was a Processing sketch that would execute the output (patterns) depending on the recorded feature of the individual's 
-                    position.
-                </p>	
-            </div>	
+        <div class="the-box">
+            <div class="overlay">
+                <img src="/ComputerMonitor1.e43cdb9c.png" alt="">
+                <iframe width="640" height="385" src="https://www.youtube.com/embed/8t9WEwZWIrA" allowfullscreen=""></iframe>
+            </div> 
+            
+            <div class="text-container">
+                <div class="para-container">
+                    <h1 class="title-font" id="overview">OVERVIEW</h1>
+                    <br><br>
+                    <p class="para-font"> 
+                        3x3x3 cube (solo project) is a physical project where a 3x3x3 LED cube has a variety of patterns that change 
+                        depending on the individual’s position, this is achieved using machine learning (k-nearest neighbour algorithm) 
+                        and three software (Arduino IDE, Processing and Wekinator). Arduino (C++) handles the hardware’s patterns and 
+                        communicates with a Processing (Java) sketch that executes patterns depending on the features set on Wekinator; 
+                        another Processing sketch handles the features and processes it through into Wekinator in which it learns the features 
+                        and outputs to the Processing sketch that communicates with Arduino. This is achieved by having Wekinator communicating 
+                        between both software using an OSC sender (input) and receiver (output).<br></p>  
+                    <div class="pro-img">
+                        <div class="vid-display">
+                            <a href="https://www.youtube.com/embed/8t9WEwZWIrA" target="_blank">
+                            <img src="/yt.ab7947ea.png" alt="Link to Alienated Soure Code">
+                            </a>
+                            </div>                  
+                            <a href="https://github.com/theAdamBader/3x3x3-LED-Cube" target="_blank">
+                            <img src="/gitSoure.7b20ceb5.png" alt="Link to 3x3x3-LED-Cube Soure Code">
+                            </a>
+                    </div> 
+                </div>
+            </div>
         </div>
-</section>
+
+            <div class="text-container">
+                <div class="para-container">                
+                    <h1 class="title-font">DESIGN & IMPLEMENTATION</h1>
+                    <br><br>
+                    <h2 class="subtitle-font" id="design">DESIGN</h2>
+                    <p class="para-font">
+                        The design of the project was inspired by similar projects; however, none of them were interactive as mine. 
+                        I started with the schematics for the project in which it needed a cover for the cube and the Arduino uno, 
+                        I started with using a cardboard as it was an effective way to get the measurements correctly and quicker to 
+                        laser cut. After the designing the the box, to its correct measurements for the project, I started using plywood for the 
+                        cube and a plastic cover, made using a 3D printer, to cover the Arduino uno. 
+                    </p>
+                    
+                    
+                        <img src="/cube.c3947cb5.PNG" alt="An image of the 3 by 3 by 3 LED cube">
+                        <img src="/schematics.3997a2e6.PNG" alt="An image of the schematics">
+                
+
+                    <h2 class="subtitle-font" id="implementation">IMPLEMENTATION</h2>
+                    <p class="para-font">
+                        The implementation for this project involved using three different software: Processing, Arduino and Wekinator. 
+                        Using Processing, I programmed a sketch that would run a pixelated video and a signal that would be called onto 
+                        Wekinator as a feature that would be recorded and ran when the other sketch was complete; then programmed an Arduino 
+                        sketch that would communicate with another Processing sketch and the Arduino hardware that would communicate and execute 
+                        the pattern depending on the position of the individual. Once that was complete, Wekinator then communicated with two 
+                        different Processing sketches, one was the pixelated video for the features using k-nearest neighbour algorithm and the 
+                        other was a Processing sketch that would execute the output (patterns) depending on the recorded feature of the individual's 
+                        position.
+                    </p>	
+                </div>	
+            </div>
+    </section>
+</div>
 
     <!-- JavaScript/jQuery  -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/page-nav.d3ba37a6.js"></script>
 
 </body>
 </html>

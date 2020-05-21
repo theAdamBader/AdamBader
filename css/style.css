@@ -2,7 +2,7 @@ body {
   margin: 0%;
   padding: 0%;
   background-color: #ffffff;
-  font-family: "Cantarell", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -27,7 +27,6 @@ body {
   height: 100vh;
   width: 100%;
 }
-
 .section-positioning .paragraph-positioning {
   position: relative;
   top: 0;
@@ -63,6 +62,7 @@ li:hover .img-animation {
 
 .each-list {
   font-size: 1.6em;
+  line-height: 2em;
   margin-block-end: 0%;
   padding: 2% 0 2% 0;
   text-align: center;
@@ -85,18 +85,6 @@ ol a:hover {
 ol li a {
   text-decoration: none;
   display: inline;
-}
-
-.img-container {
-  position: fixed;
-  left: 50%;
-  top: 15%;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-.img-container img {
-  opacity: 1;
-  animation: slide-up 1.2s ease;
 }
 
 /* KEYFRAMES FOR PROJECT LISTS */
@@ -188,7 +176,7 @@ ol li a {
   top: 50%;
   left: 50%;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   color: #067cca;
   z-index: 2;
   transform: translate(-50%, -50%);
@@ -250,14 +238,66 @@ ol li a {
   display: inline-flex;
   flex-flow: column wrap;
   padding: 10px;
-  line-height: 3em;
   list-style: none;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(20% + 30px);
+  list-style: none;
+}
+.grid a {
+  text-decoration: none;
+}
+
 .vid-display {
   display: none;
+}
+
+.img-container {
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.img-container img {
+  opacity: 1;
+  animation: slide-up 1.2s ease;
+}
+
+/* ================================================================================================================= */
+.close {
+  position: fixed;
+  right: 5%;
+  transform: translateX(-5%);
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: fixed;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333333;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
 }
 
 /* ================================================================================================================= */
@@ -342,7 +382,7 @@ nav li a:hover {
 }
 .build-span:before {
   content: "Design";
-  animation: build infinite 1.5s;
+  animation: build infinite 3s;
 }
 
 @keyframes build {
@@ -358,7 +398,7 @@ nav li a:hover {
 }
 .change-span:before {
   content: "Experiences";
-  animation: change infinite 1.5s;
+  animation: change infinite 3s;
 }
 
 @keyframes change {
@@ -417,7 +457,6 @@ h3 a {
 /* PAGE FONTS */
 .headline-font {
   font-size: 80px;
-  font-family: "Amatic SC", cursive;
   text-align: center;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
@@ -425,7 +464,6 @@ h3 a {
 
 .title-font {
   font-size: 60px;
-  font-family: "Amatic SC", cursive;
   text-align: center;
 }
 
@@ -436,12 +474,11 @@ h3 a {
 
 .subtitle-font {
   font-size: 35px;
-  font-family: "Amatic SC", cursive;
 }
 
 .para-font {
   font-size: 20px;
-  font-family: "Cairo", sans-serif;
+  line-height: 2em;
   margin-bottom: 60px;
 }
 
@@ -516,49 +553,6 @@ iframe {
   max-height: 80px;
   max-width: 300px;
   margin: 60px auto 0 auto;
-}
-
-.cube-img {
-  display: flex;
-  max-height: 400px;
-  max-width: 400px;
-}
-.cube-img img {
-  height: 350px;
-  width: 350px;
-  padding: 0 50px;
-}
-
-/* ================================================================================================================= */
-/* CLOSE BUTTON (PAGES) */
-.close {
-  position: fixed;
-  right: 5%;
-  transform: translateX(-5%);
-  width: 32px;
-  height: 32px;
-  opacity: 0.3;
-}
-
-.close:hover {
-  opacity: 1;
-}
-
-.close:before, .close:after {
-  position: fixed;
-  left: 15px;
-  content: " ";
-  height: 33px;
-  width: 2px;
-  background-color: #333333;
-}
-
-.close:before {
-  transform: rotate(45deg);
-}
-
-.close:after {
-  transform: rotate(-45deg);
 }
 
 /* ================================================================================================================= */
@@ -744,6 +738,7 @@ iframe {
   .container-positioning {
     height: 100%;
     width: 100%;
+    margin-top: 100px;
   }
 
   .container-positioning .paragraph-positioning {
@@ -755,12 +750,13 @@ iframe {
   .section-positioning {
     height: 100%;
     width: 100%;
+    margin-top: 100px;
   }
 
   .section-positioning .paragraph-positioning {
     position: relative;
-    top: 20%;
-    transform: translateY(-20%);
+    top: 0;
+    transform: translateY(0);
   }
 
   .wrapper {
@@ -830,6 +826,7 @@ iframe {
     font-weight: 400;
   }
 }
+
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 8vw;
@@ -868,5 +865,22 @@ iframe {
   .section-positioning .link-list:hover {
     color: #333333;
     text-shadow: none;
+  }
+
+  /* PAGE FONTS */
+  .headline-font {
+    font-size: 40px;
+  }
+
+  .title-font {
+    font-size: 30px;
+  }
+
+  .subtitle-font {
+    font-size: 26px;
+  }
+
+  .para-font {
+    font-size: 20px;
   }
 }

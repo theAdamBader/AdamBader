@@ -2,7 +2,7 @@ body {
   margin: 0%;
   padding: 0%;
   background-color: #ffffff;
-  font-family: "Cantarell", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 //INDEX CONTAINER
@@ -27,7 +27,13 @@ body {
 .section-positioning {
   height: 100vh;
   width: 100%;
+  .paragraph-positioning {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
 }
+
 .pro-img img {
   height: auto;
   max-width: 300px;
@@ -165,14 +171,14 @@ ol li a {
   width: 100%;
   height: 5px;
   background-color: #067cca;
-  animation: moveBefore45 5s 0.5s infinite ease-in-out;
+  animation: moveBefore 5s 0.5s infinite ease-in-out;
 }
 
 .inner-loader .loader-title {
     position: absolute;
     top: 50%; left: 50%;
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 400;
     color: #067cca;
     z-index: 2;
     transform: translate(-50%, -50%);
@@ -180,7 +186,7 @@ ol li a {
     -webkit-text-stroke-color: rgb(240,240,241);
 }
 
-@keyframes moveBefore45 {
+@keyframes moveBefore {
   0%   { height: 5px; bottom: 0; top: auto; }
   25%  { height: 100%; bottom: 0; top: auto; }
   30%  { height: 100%; bottom: auto; top: 0; }
@@ -214,15 +220,23 @@ ol li a {
   margin-block-end: 0.5em;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(20% + 30px);
+  list-style: none;
+  a{text-decoration: none;}
+}
+
 .vid-display {
   display: none;
 }
 
 .img-container {
   position: fixed;
-  left: 65%;
+  left: 50%;
   top: 15%;
-  transform: translateX(-65%);
+  transform: translateX(-50%);
   z-index: -1;
   img {
     opacity: 1;
@@ -353,7 +367,7 @@ nav li a:hover {
 
 .build-span:before {
   content: "Design";
-  animation: build infinite 1.5s;
+  animation: build infinite 3s;
 }
 
 @keyframes build {
@@ -370,7 +384,7 @@ nav li a:hover {
 
 .change-span:before {
   content: "Experiences";
-  animation: change infinite 1.5s;
+  animation: change infinite 3s;
 }
 
 @keyframes change {
@@ -432,7 +446,6 @@ h3 {
 /* PAGE FONTS */
 .headline-font {
   font-size: 80px;
-  font-family: "Amatic SC", cursive;
   text-align: center;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
@@ -440,7 +453,6 @@ h3 {
 
 .title-font {
   font-size: 60px;
-  font-family: "Amatic SC", cursive;
   text-align: center;
 }
 
@@ -451,12 +463,11 @@ h3 {
 
 .subtitle-font {
   font-size: 35px;
-  font-family: "Amatic SC", cursive;
 }
 
 .para-font {
   font-size: 20px;
-  font-family: "Cairo", sans-serif;
+  line-height: 2em;
   margin-bottom: 60px;
 }
 
@@ -534,16 +545,16 @@ iframe {
   margin: 60px auto 0 auto;
 }
 
-.cube-img {
-  display: flex;
-  max-height: 400px;
-  max-width: 400px;
-  img {
-    height: 350px;
-    width: 350px;
-    padding: 0 50px;
-  }
-}
+// .cube-img {
+//   display: flex;
+//   max-height: 400px;
+//   max-width: 400px;
+//   img {
+//     height: 350px;
+//     width: 350px;
+//     padding: 0 50px;
+//   }
+// }
 
 /* ================================================================================================================= */
 
@@ -745,8 +756,8 @@ iframe {
     }
     .section-positioning .paragraph-positioning {
       position: relative;
-      top: 20%;
-      transform: translateY(-20%);
+      top: 0;
+      transform: translateY(0);
     }
   
     .wrapper {
@@ -854,4 +865,22 @@ iframe {
         color: #333333;
         text-shadow: none;
     }
+
+  /* PAGE FONTS */
+  .headline-font {
+    font-size: 40px;
+  }
+
+  .title-font {
+    font-size: 30px;
+  }
+
+  .subtitle-font {
+    font-size: 26px;
+  }
+
+  .para-font {
+    font-size: 20px;
+  }
+
 }
