@@ -742,22 +742,23 @@ iframe {
     .container-positioning  {
       height: 100%;
       width: 100%;
-    }
-
-    .container-positioning  .paragraph-positioning {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
+      margin-top: 50%;
+      .paragraph-positioning {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   
     .section-positioning {
       height: 100%;
       width: 100%;
-    }
-    .section-positioning .paragraph-positioning {
-      position: relative;
-      top: 0;
-      transform: translateY(0);
+      margin-top: 50%;
+      .paragraph-positioning {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+      }
     }
   
     .wrapper {
@@ -771,11 +772,11 @@ iframe {
   
     .cube-img {
       display: none;
+      img {
+        display: none;
+      }
     }
-    .cube-img img {
-      display: none;
-    }
-  
+    
     .overlay {
       display: none;
     }
