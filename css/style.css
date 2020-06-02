@@ -584,6 +584,8 @@ svg{z-index: 99; cursor: pointer;}
   z-index: 98;
 }
 
+#cookieConsent {display: none;}
+
 /*============================================================================================================================*/
 
 #blur.active{filter:blur(4px); z-index: -90;}
@@ -1002,9 +1004,10 @@ iframe {
 
   .dark-mode .gitHub-colour-page{background: #6e5494;}
 
-  /*COOKIE BANNER*/
+/*COOKIE BANNER*/
 #cookieConsent 
 {
+  display: block;
   background-color: rgba(20,20,20,0.9);
   min-height: 15%;
   color: #ffffff;
