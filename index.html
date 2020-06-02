@@ -9,166 +9,95 @@
     <link rel="icon" href="./img/favicon.png">
 
     <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7806619c2b.js" crossorigin="anonymous"></script>
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/artwork.css">
-
-    <script src="https://kit.fontawesome.com/7806619c2b.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
-    <!-- Pre-loader -->
-    <div class="loader inner-loader">
-        <div class="loader-container"></div>
-        <p class='loader-title'>ADAM BADER</p>
+<div id="cookieConsent">
+    <p>	To enjoy the full experience, check it out on desktop</p>
+    <a class="cookieConsentOK">OK</a>
+</div>
+
+<!-- NAVIGATION -->
+<div class="nav-bar"></div>
+<div class="main-check">
+    <input id="negative" type="checkbox">
+</div>
+
+<svg id="strokes" class="ham-svg" viewBox="0 0 100 100" width="80">
+    <path
+        class="line top"
+        d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
+    <path
+        class="line middle"
+        d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
+    <path
+        class="line bottom"
+        d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
+</svg>
+
+<div id="nav-overlay">
+    
+    <div class= "overlay-content">
+        <a href="#about">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#art">ARTWORK</a>
+        <a href="#contact">CONTACT</a>
     </div>
 
-    <!-- Nav -->
-    <nav> 
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class= "sidebar">
-            <div class="positioning">
-                <img class="img-size" src="img/myself.jpg" alt="">
-                <div id="menu">
-                    <ul>
-                        <li>
-                            <a class="active" href="#about">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">UNIVERSITY PROJECTS</a>
-                        </li>
-                        <!-- <li> 
-                            <a href="#projects">PROJECTS</a>
-                        </li> -->
-                        <li> 
-                            <a href="#art">ARTWORK</a>
-                        </li>
-                        <li> 
-                            <a href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div class="side-check">
+        <input id="negative-mob" type="checkbox">
+    </div>
+</div>
 
-    <!-- Intro -->
-    <div class="container" id="about">
-        <section class="container-positioning">
-            <div class="paragraph-positioning">
+<div id="blur">
+    <div class="container" id="about">   
+
+        <!-- INRTODUCTION -->
+        <section>
+        <div class="about-container">
                 <h1>Adam <span>Bader</span></h1>
                 <h2>Games designer, Programmer & Artist</h2><br>
                 <p class="paragraph">
                     I am a passionate programmer and artist who is interested in the dynamics, 
                     mechanics and aesthetics of a program and its accessibility; a team oriented 
                     programmer who strives to write clean, cache friendly code. I’m always eager to 
-                    learn and leverage my skills to facilitate unforgettable gameplay and narrative driven experiences. <br><br>
-                    Graduate in BSc Games Programmer at Goldsmiths, University of London. <br><br>
-                    Programming languages: C++, C#, Java, HTML, CSS, Sass, JavaScript.<br><br>
-                    Software skills: Unity, Unreal Engine, Visual Studio, OpenFrameworks, GameMaker, P5JS, Processing.
+                    learn and leverage my skills to facilitate unforgettable experiences. <br><br>
+                    Graduate in <span> BSc Games Programmer </span>at Goldsmiths, University of London. <br><br>
+                    <span>Programming languages:</span> C++, C#, Java, HTML, CSS, Sass, JavaScript.<br><br>
+                    <span>Software skills:</span> Unity, Visual Studio, Visual Studio Code, openFrameworks, GameMaker, P5js, Processing.
                 </p>
-            </div>
+                <img class="about-image" src="./img/myself.jpg" alt="">
+            </div> 
         </section>
-    </div>
     
-    <!-- Uni projects -->
-    <div class="container" id="portfolio">
-        <section class="section-positioning">
-            <div class="paragraph-positioning">
-                <h2 class="">GOLDSMITHS, <span>UNIVERSITY OF LONDON</span></h2>
-                <div class="row">    
-                    <ol class="grid-container">    
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./alienated.html">ALIENATED</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/alienated.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/tron.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./runforest.html">RUN FOREST RUN</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/run_forest_run.jpg" alt="">
-                            </div>          
-                        </li>
-
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./invasionforce.html">INVASION ALPHA FORCE</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/invasion.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./flyaway.html">FLY AWAY</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/flyaway.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./fingergun.html">FINGER GUN</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/fingergun.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./cube.html">3x3x3 LED CUBE</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/cube.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./lavieestbelle.html">LA VIE EST BELLE (VR)</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/thumbnails/lavie.jpg" alt="">
-                            </div>          
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- personal projects -->
-   <!-- <div class="container">
-        <section class="section-positioning" id="projects">
-            <div class="paragraph-positioning">
-                <h2 class="">PRO<span>JECTS</span></h2>   
-
-                <ul class="grid">    
+        <!-- UNI PROJECTS -->
+            <section id="portfolio" class="positioning">
+                <h2 class="subtitle-font">GOLDSMITHS, <span>UNIVERSITY OF LONDON</span></h2>
+                <ul class="grid-container">    
                     <li>
                         <div class="each-list">
                             <a class="link-list" href="./alienated.html">ALIENATED</a>
                         </div> 
                         <div class="img-container">
-                            <img class="img-animation" src="img/profile.jpg" alt="">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/alienated.jpg" alt="">
+                                <p>
+                                    A 2D shoot ‘em game where you play as a protagonist who becomes the 
+                                    antagonist of this game, causing nothing but destruction on his own clan for feeling alienated.
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">C#</span> <span class="software">Unity</span> <span class="genre">Adventure</span>
+                                    <br>
+                                    <span class="genre">Shoot 'em</span>
+                                </p>
+                            </div>
                         </div>          
                     </li>
                     <li>
@@ -176,56 +105,216 @@
                             <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
                         </div> 
                         <div class="img-container">
-                            <img class="img-animation" src="img/profile.jpg" alt="">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/tron.jpg" alt="">
+                                <p>
+                                    Tron: The Upgrade is a top down grid-based game of the classic game Tron. This version has the ability 
+                                    of making the player invisible for a couple of seconds where did does not leave any trail and passes 
+                                    through trails created. 
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">Java</span> <span class="software">Processing</span>
+                                    <span class="genre">Multiplayer</span> <span class="genre">Action</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./runforest.html">RUN FOREST RUN</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/run_forest_run.jpg" alt="">
+                                <p>
+                                    A side scrolling game where you play a tree log known as Forest Grump and you must 
+                                    avoid getting burned by enemies heading towards you as well as the spreading fire behind 
+                                    you. How far can you run until they catch you?  
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">Java</span> <span class="software">Processing</span> <span class="genre">Adventure</span> 
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./invasionforce.html">INVASION ALPHA FORCE</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/invasion.jpg" alt="">
+                                <p>
+                                    A top down, 2D turn based RPG where you are creatures from another planet invading Earth 
+                                    to grab resources, but you must defeat the humans you face. 
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">GML</span> <span class="software">GameMaker</span>
+                                    <span class="genre">Roleplay</span> <span class="genre">Turn-based</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./flyaway.html">FLY AWAY</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/flyaway.jpg" alt="">
+                                <p>
+                                    A quick 2D shoot ‘em up game where you play as an angle facing his inner demons. 
+                                    You start off with a swarm of enemies, can you vanquish your inner demons before they get you? 
+                                    <br><br>
+                                    (Click for more information)  
+                                    <br class="br-space">
+                                    <span class="program">C++</span> <span class="software">Visual Studios</span> <span class="software">openFrameworks</span>
+                                    <span class="genre">Shoot 'em</span> <span class="genre">Action</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./fingergun.html">FINGER GUN</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/fingergun.jpg" alt="">
+                                <p>
+                                    Finger Gun is the first game to be created using a Leap Motion and Wekinator, a software by my lecture 
+                                    Dr. Rebecca Fiebrink, with this I created a game that take a set of features and implement them onto Unity. 
+                                    It is an FPS (first person shooter) where you use your fingers to aim and fire at incoming enemies. 
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">C#</span> <span class="program">JavaScript</span> <span class="program">Java</span> 
+                                    <span class="program">Machine Learning</span>
+                                    <span class="software">Unity</span> <span class="software">Wekinator</span> <span class="software">Processing</span>
+                                    <span class="genre">Shoot 'em</span> <span class="genre">Action</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./cube.html">3x3x3 LED CUBE</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/cube.jpg" alt="">
+                                <p>
+                                    The 3D LED Cube was part of Physical Computing module which I took inspiration of creating a 3x3x3 LED 
+                                    Cube with patterns, using Arduino; however, part of the module was to make it interactive, so I created 
+                                    an additional program, using Processing, to create a pixel camera and using Wekinator and set examples of 
+                                    what to look for and execute the pattern depending on the users hand position. 
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">C++</span> <span class="program">Java</span> <span class="program">Machine Learning</span> <span class="software">Arduino</span> 
+                                    <span class="software">Processing</span> <span class="software">Wekinator</span>
+                                    <span class="genre">Physical Computing</span> <span class="genre">LED</span> <span class="genre">Human Interaction</span> 
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./lavieestbelle.html">LA VIE EST BELLE (VR)</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/lavie.jpg" alt="">
+                                <p>
+                                    La Vie est Belle (Life is beautiful) is a mobile virtual reality therapy game, on Android, 
+                                    that transports you into an immersive and calming world where you explore and solve two puzzles to 
+                                    get into the house; the music used in this game helped amplify the environment and feel of this game.  
+                                    <br><br>
+                                    (Click for more information)
+
+                                    <br class="br-space">
+                                    
+                                    <span class="program">C#</span> <span class="software">Unity</span> <span class="software">Blender</span>
+                                    <span class="genre">Puzzle</span> <span class="genre">Adventure</span> 
+                                    <span class="genre">VR</span> <span class="genre">Mobile</span> <span class="genre">Android</span>
+                                </p>
+                            </div>
                         </div>          
                     </li>
                 </ul>
-                
-            </div>
-        </section>
-    </div> -->
+            </section>
 
-    <!-- art projects -->
-    <div class="container" id="art">
-        <section class="section-positioning">
+        <!-- personal projects -->
+    <!-- <div class="container">
+            <section class="section-positioning" id="projects">
+                <div class="paragraph-positioning">
+                    <h2 class="">PRO<span>JECTS</span></h2>   
 
-            <h2 class="">ART<span>WORK</span></h2>
-            <img class='artwork-img' src="./img/artwork/knight.jpg" alt='knight made using Aseprite'>
-            <img class='artwork-img' src="./img/artwork/necromancer.jpg" alt='necromancer made using Aseprite'>
-            <img class='artwork-img' src="./img/artwork/the_void.jpg" alt='image of person in the void'>
-            <img class='artwork-img' src="./img/artwork/dragon.jpg" alt='image of a person in a dragons cave'>
-            <img class='artwork-img' src="./img/artwork/name.gif" alt='image that I created for the old site using P5js'>
-            <img class='artwork-img' src="./img/artwork/apple.jpg" alt='image of an apple that I am created for the la vie est belle logo'>
-            <img class='artwork-img' src="./img/artwork/beauty.jpg" alt='an image of my brother in four different shades. Inspried by Andy Warhol'>
-            <img class='artwork-img' src="./img/artwork/nike_one.jpg" alt='image of Nike Air Jordan One that has been modified to give an adverstisment look'>              
-            
-        </section>
-    </div>
-
-    <!-- contact -->
-    <div class="container" id="contact">
-        <section class="container-positioning">
-            <div class="paragraph-positioning">
-
-                <h3>Let's <span class="build-span"></span> something great!</h3>
-                <h3>Con<span>tact</span> <a class="contact-anim" href="mailto:adambader2589@gmail.com">Adam Bader</a></h3>
-                <h3>for <span class="change-span">.</span></h3>     
-                <div>
-                <ul class="social-buttons">
-                    <li><a href="https://twitter.com/AdamBader25" target="_blank" class="social-icon linkedIn-colour"><i class="fab fa-twitter fa-3x"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/adam-bader-a8933788/" target="_blank" class="social-icon linkedIn-colour"><i class="fab fa-linkedin-in fa-3x"></i></a>
-                    </li> 
-                    <li><a href="https://www.github.com/TheAdamBader" target="_blank" class="social-icon gitHub-colour"><i class="fab fa-github fa-3x"></i></a>
-                    </li> 
-                </ul>
+                    <ul class="grid">    
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="./alienated.html">ALIENATED</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="img/profile.jpg" alt="">
+                            </div>          
+                        </li>
+                        <li>
+                            <div class="each-list">
+                                <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
+                            </div> 
+                            <div class="img-container">
+                                <img class="img-animation" src="img/profile.jpg" alt="">
+                            </div>          
+                        </li>
+                    </ul>
+                    
                 </div>
-            </div>
+            </section>
+        </div> -->
+
+        <!-- art projects -->
+        <section id="art">
+                <h2 class="subtitle-font">ART<span>WORK</span></h2>
+                <img class='artwork-img' src="./img/artwork/knight.jpg" alt='knight made using Aseprite'>
+                <img class='artwork-img' src="./img/artwork/necromancer.jpg" alt='necromancer made using Aseprite'>
+                <img class='artwork-img' src="./img/artwork/the_void.jpg" alt='image of person in the void'>
+                <img class='artwork-img' src="./img/artwork/dragon.jpg" alt='image of a person in a dragons cave'>
+                <img class='artwork-img' src="./img/artwork/name.gif" alt='image that I created for the old site using P5js'>
+                <img class='artwork-img' src="./img/artwork/apple.jpg" alt='image of an apple that I am created for the la vie est belle logo'>
+                <img class='artwork-img' src="./img/artwork/beauty.jpg" alt='an image of my brother in four different shades. Inspried by Andy Warhol'>
+                <img class='artwork-img' src="./img/artwork/nike_one.jpg" alt='image of Nike Air Jordan One that has been modified to give an adverstisment look'>              
         </section>
+
+        <!-- contact -->
+        <div id="contact">
+            <h3>Let's <span class="build-span"></span> something great!</h3>
+            <h3>Con<span>tact</span> <a class="contact-anim" href="mailto:adambader2589@gmail.com">Adam Bader</a></h3>
+            <h3>for <span class="change-span">.</span></h3>     
+            <div>
+            <ul class="social-buttons">
+                <li>
+                    <a href="https://twitter.com/AdamBader25" target="_blank" class="social-icon twitter-colour"><i class="fab fa-twitter fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/adam-bader-a8933788/" target="_blank" class="social-icon linkedIn-colour"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                </li> 
+                <li>
+                    <a href="https://www.github.com/TheAdamBader" target="_blank" class="social-icon gitHub-colour"><i class="fab fa-github-alt fa-3x"></i></a>
+                </li> 
+            </ul>
+            </div>
+        </div>
     </div>
+</div>
 
     <!-- JavaScript/jQuery  -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./js/javascript.js"></script>
     <script src="./js/jquery.js"></script>
     
 </body>

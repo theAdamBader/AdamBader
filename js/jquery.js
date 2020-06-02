@@ -1,49 +1,3 @@
-//SCROLLING
-$(document).ready(function () {
-  $(document).on("scroll", onScroll);
-  
-  //smoothscroll
-  $('a[href^="#"]').on('click', function (e) {
-      e.preventDefault();
-      $(document).off("scroll");
-      
-      $('a').each(function () {
-          $(this).removeClass('active');
-      })
-      $(this).addClass('active');
-    
-      var target = this.hash,
-          menu = target;
-      $target = $(target);
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top+2
-      }, 1500, 'swing', function () {
-
-      $(document).on("scroll", onScroll);
-    });
-  });
-});
-
-function onScroll(event){
-  var scrollPos = $(document).scrollTop();
-  $('#menu a').each(function () {
-      var currLink = $(this);
-      var refElement = $(currLink.attr("href"));
-      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-          $('#menu ul li a').removeClass("active");
-          currLink.addClass("active");
-      }
-      else{
-          currLink.removeClass("active");
-      }
-  });
-}
-
-//REFRESH PAGE TO THE TOP
-$(document).ready(function(){
-  $(this).scrollTop(0);
-});
-
 //ARTWORK
 $(document).ready(function() {
   $(".artwork-img").click(function() {
@@ -64,24 +18,48 @@ $(document).ready(function() {
   });
 });
 
-//PRELOADER
-// Set the pre-loader animation for 2200 milliseconds for it to animated and fade to the page
-setTimeout(function(){
-  $('.loader').fadeToggle();
-}, 5000);
+//SMOOTH SCROLLING
+$(document).ready(function(){
 
-//HAMBURGER
-// Opens the responsive menu
-$('.hamburger').click(function() {
-  $(this).toggleClass('active open');
-  $('.sidebar').toggleClass('open');
-  $('.sidebar li').toggleClass('fade');
+  $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+      });
+    }
+  });
 });
 
-// Closes the responsive menu on anchor click
-$('.sidebar li').on('click', function(){
-  $(".sidebar").toggleClass('open');
-  $('.sidebar li').toggleClass('fade');
-  $(".hamburger").toggleClass('open');
-  $(".hamburger").removeClass("active");
+//TOGGLE SWITCH
+$(function(){
+  var test = localStorage.input === 'true'? true: false;
+  $('input').prop('checked', test || false);
 });
+
+$('input').on('change', function() {
+  localStorage.input = $(this).is(':checked');
+  console.log($(this).is(':checked'));
+});
+
+$(document).ready(function() {
+  $("input").click(function() {
+      $(".change-nav").removeClass('.active');
+      $(this).addClass('.active');
+  });
+});
+
+$(document).ready(function(){   
+  setTimeout(function () {
+      $("#cookieConsent").fadeIn(200);
+   }, 4000);
+  $("#closeCookieConsent, .cookieConsentOK").click(function() {
+      $("#cookieConsent").fadeOut(200);
+  }); 
+}); 

@@ -118,6 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/img-slider.js":[function(require,module,exports) {
+//SLIDESHOW
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -146,7 +147,97 @@ function showSlides(n) {
   }
 
   slides[slideIndex - 1].style.display = "block";
+} //==========================================================================================================================//
+//NAVIGATION
+
+
+document.getElementById("strokes").addEventListener("click", toggleFunc);
+document.querySelector(".overlay-content").addEventListener("click", toggleFunc);
+
+function toggleFunc() {
+  var menu = document.getElementById("strokes");
+  menu.classList.toggle('active');
+  var styling = document.getElementById("nav-overlay");
+
+  if (styling.style.width === "100%") {
+    styling.style.width = "0%";
+  } else {
+    styling.style.width = "100%";
+  }
+
+  var blur = document.getElementById("blur");
+  blur.classList.toggle('active');
+} //==========================================================================================================================//
+//NIGHT MODE
+
+
+var darkMode = localStorage.getItem("dark-mode");
+var darkModeToggle = document.querySelector("#negative");
+
+var enableDarkMode = function enableDarkMode() {
+  document.body.classList.add("dark-mode");
+  localStorage.setItem("dark-mode", "enabled");
+};
+
+var disableDarkMode = function disableDarkMode() {
+  document.body.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode", null);
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode();
 }
+
+darkModeToggle.addEventListener("click", function () {
+  darkMode = localStorage.getItem("dark-mode");
+
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+}); //MOB VERSION
+
+var darkMob = localStorage.getItem("dark-mode");
+var darkModeToggleMob = document.querySelector("#negative-mob");
+
+var enableDarkModeMob = function enableDarkModeMob() {
+  document.body.classList.add("dark-mode");
+  localStorage.setItem("dark-mode", "enabled");
+};
+
+var disableDarkModeMob = function disableDarkModeMob() {
+  document.body.classList.remove("dark-mode");
+  localStorage.setItem("dark-mode", null);
+};
+
+if (darkMob === "enabled") {
+  enableDarkModeMob();
+}
+
+darkModeToggleMob.addEventListener("click", function () {
+  darkMob = localStorage.getItem("dark-mode");
+
+  if (darkMob !== "enabled") {
+    enableDarkModeMob();
+  } else {
+    disableDarkModeMob();
+  }
+});
+$(function () {
+  var test = localStorage.input === 'true' ? true : false;
+  $('input').prop('checked', test || false);
+});
+$('input').on('change', function () {
+  localStorage.input = $(this).is(':checked');
+  console.log($(this).is(':checked'));
+});
+$(document).ready(function () {
+  $("input").click(function () {
+    $(".change-nav").removeClass('.active');
+    $(this).addClass('.active');
+  });
+});
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -175,7 +266,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57491" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51599" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -24,7 +24,7 @@
   max-height: 240px;
   padding: 1px;
   margin: 5px;
-  filter: grayscale();
+  filter: grayscale(1);
   transition: 0.3s;
   cursor: pointer;
 }

@@ -118,48 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/jquery.js":[function(require,module,exports) {
-//SCROLLING
-$(document).ready(function () {
-  $(document).on("scroll", onScroll); //smoothscroll
-
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    $('a').each(function () {
-      $(this).removeClass('active');
-    });
-    $(this).addClass('active');
-    var target = this.hash,
-        menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top + 2
-    }, 1500, 'swing', function () {
-      $(document).on("scroll", onScroll);
-    });
-  });
-});
-
-function onScroll(event) {
-  var scrollPos = $(document).scrollTop();
-  $('#menu a').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      $('#menu ul li a').removeClass("active");
-      currLink.addClass("active");
-    } else {
-      currLink.removeClass("active");
-    }
-  });
-} //REFRESH PAGE TO THE TOP
-
-
-$(document).ready(function () {
-  $(this).scrollTop(0);
-}); //ARTWORK
-
+//ARTWORK
 $(document).ready(function () {
   $(".artwork-img").click(function () {
     $src = $(this).attr("src");
@@ -176,25 +135,41 @@ $(document).ready(function () {
   $("body").on("click", "#light-box span", function () {
     $("#light-box").hide();
   });
-}); //PRELOADER
-// Set the pre-loader animation for 2200 milliseconds for it to animated and fade to the page
+}); //SMOOTH SCROLLING
 
-setTimeout(function () {
-  $('.loader').fadeToggle();
-}, 5000); //HAMBURGER
-// Opens the responsive menu
+$(document).ready(function () {
+  $("a").on('click', function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {});
+    }
+  });
+}); //TOGGLE SWITCH
 
-$('.hamburger').click(function () {
-  $(this).toggleClass('active open');
-  $('.sidebar').toggleClass('open');
-  $('.sidebar li').toggleClass('fade');
-}); // Closes the responsive menu on anchor click
-
-$('.sidebar li').on('click', function () {
-  $(".sidebar").toggleClass('open');
-  $('.sidebar li').toggleClass('fade');
-  $(".hamburger").toggleClass('open');
-  $(".hamburger").removeClass("active");
+$(function () {
+  var test = localStorage.input === 'true' ? true : false;
+  $('input').prop('checked', test || false);
+});
+$('input').on('change', function () {
+  localStorage.input = $(this).is(':checked');
+  console.log($(this).is(':checked'));
+});
+$(document).ready(function () {
+  $("input").click(function () {
+    $(".change-nav").removeClass('.active');
+    $(this).addClass('.active');
+  });
+});
+$(document).ready(function () {
+  setTimeout(function () {
+    $("#cookieConsent").fadeIn(200);
+  }, 4000);
+  $("#closeCookieConsent, .cookieConsentOK").click(function () {
+    $("#cookieConsent").fadeOut(200);
+  });
 });
 },{}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -224,7 +199,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57491" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50908" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
