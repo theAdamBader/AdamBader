@@ -584,7 +584,7 @@ svg{z-index: 99; cursor: pointer;}
   z-index: 98;
 }
 
-#cookieConsent {display: none;}
+.cookieCrumble {display: none;}
 
 /*============================================================================================================================*/
 
@@ -1005,9 +1005,11 @@ iframe {
   .dark-mode .gitHub-colour-page{background: #6e5494;}
 
 /*COOKIE BANNER*/
+
+.cookieCrumble{display: block;}
+
 #cookieConsent 
 {
-  display: block;
   background-color: rgba(20,20,20,0.9);
   min-height: 15%;
   color: #ffffff;
