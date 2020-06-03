@@ -974,9 +974,13 @@ iframe {
 
   /* MOB SOCIAL BUTTON */
   .social-buttons {
-    font-size: 2vw;
+    font-size: 1.5vw;
     display: flex;
+    width: 100%;
+    transform: translateX(-75px);
   }
+
+  .social-icon{margin: 20px;}
 
   /* MOB SOCIAL BUTTON (PAGES) */
   .social-icon {
@@ -1005,11 +1009,11 @@ iframe {
   .dark-mode .gitHub-colour-page{background: #6e5494;}
 
 /*COOKIE BANNER*/
-
 .cookieCrumble{display: block;}
 
 #cookieConsent 
 {
+  width: 100%;
   background-color: rgba(20,20,20,0.9);
   min-height: 15%;
   color: #ffffff;
@@ -1047,7 +1051,7 @@ iframe {
   }
 
   h3 {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   .paragraph {
@@ -1069,7 +1073,7 @@ iframe {
   }
 
   .subtitle-font {
-    font-size: 26px;
+    font-size: 6vw;
   }
 
   .para-font {
@@ -1083,7 +1087,7 @@ iframe {
     width: 200px;
     top: 0;
     left: 0;
-    transform: translate(45%, -110%);
+    transform: translate(25%, -110%);
   }
 
   .about-container > p {font-size: 15px;}  
