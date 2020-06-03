@@ -916,7 +916,7 @@ iframe {
   .container {
     height: 100vh;
     max-width: 100%;
-    padding: 50px;
+    padding: 0;
     padding-top: 350px;
   }
 
@@ -974,10 +974,10 @@ iframe {
 
   /* MOB SOCIAL BUTTON */
   .social-buttons {
-    font-size: 1.5vw;
+    font-size: 2vw;
     display: flex;
-    /* width: 100%;
-    transform: translateX(-25px); */
+    /* width: 100%; */
+    transform: translateX(-50px);
   }
 
   .social-icon{margin: 20px;}
