@@ -358,6 +358,7 @@ input:checked[type = "checkbox"]:before{
 
 @media screen and (max-width: 800px) {
   .artwork-img{
+    margin-left: 10px;
     max-width: 65%;
     max-height: 65%;
     filter: none;
@@ -415,6 +416,7 @@ input:checked[type = "checkbox"]:before{
 /* ================================================================================================================= */
 
 /* CONTACT ANIMATION*/
+#contact{margin-left: 10px;}
 .contact-anim {
   position: relative;
   text-decoration: none;
@@ -916,7 +918,6 @@ iframe {
   .container {
     height: 100vh;
     width: 100%;
-    margin-left: 10px;
     padding: 0;
     padding-top: 350px;
   }
@@ -926,11 +927,12 @@ iframe {
   }
 
   .positioning .each-list {
-    font-size: 7vw;
+    font-size: 6vw;
+    margin-left: 10px;
   }
 
   .positioning .each-list:hover {
-    font-size: 7vw;
+    font-size: 6vw;
     animation: shake 0;
   }
 
@@ -973,6 +975,8 @@ iframe {
     display: block;
   }
 
+  #negative-mob{margin-top: 12px;}
+  
   /* MOB SOCIAL BUTTON */
   .social-buttons {
     font-size: 2vw;
@@ -1074,6 +1078,7 @@ iframe {
   }
 
   .subtitle-font {
+    margin-left: 10px;
     font-size: 6vw;
   }
 
@@ -1081,7 +1086,7 @@ iframe {
     font-size: 20px;
   }
 
-  .about-container{width: 90%;}
+  .about-container{width: 90%; margin-left: 10px;}
 
   .about-container > img{
     border-radius: 50%;
