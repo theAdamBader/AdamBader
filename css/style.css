@@ -976,8 +976,8 @@ iframe {
   .social-buttons {
     font-size: 1.5vw;
     display: flex;
-    width: 100%;
-    transform: translateX(-75px);
+    /* width: 100%;
+    transform: translateX(-25px); */
   }
 
   .social-icon{margin: 20px;}
@@ -1008,35 +1008,35 @@ iframe {
 
   .dark-mode .gitHub-colour-page{background: #6e5494;}
 
-/*COOKIE BANNER*/
-.cookieCrumble{display: block;}
+  /*COOKIE BANNER*/
+  .cookieCrumble{display: block;}
 
-#cookieConsent 
-{
-  width: 100%;
-  background-color: rgba(20,20,20,0.9);
-  min-height: 15%;
-  color: #ffffff;
-  line-height: 1.5em;
-  padding: 8px 0 8px 30px;
-  font-family: 'Quicksand', sans-serif;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: none;
-  z-index: 9999;
-}
+  #cookieConsent 
+  {
+    width: 100%;
+    background-color: rgba(20,20,20,0.9);
+    min-height: 15%;
+    color: #ffffff;
+    line-height: 1.5em;
+    padding: 8px 0 8px 30px;
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+  }
 
-#cookieConsent a.cookieConsentOK 
-{
-  background-color: #067cca;
-  color: #fff;
-  display: inline-block;
-  border-radius: 15%;
-  padding: 5px 25px;
-  cursor: pointer;
-}
+  #cookieConsent a.cookieConsentOK 
+  {
+    background-color: #067cca;
+    color: #fff;
+    display: inline-block;
+    border-radius: 15%;
+    padding: 5px 25px;
+    cursor: pointer;
+  }
 }
 
 /* ================================================================================================================= */
