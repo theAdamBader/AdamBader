@@ -19,13 +19,13 @@ body {
 
 .dark-mode .link-list, .dark-mode .contact-anim {color: #b8b5b5;}
 
-.dark-mode .twitter-colour, .dark-mode .linkedIn-colour, .dark-mode .gitHub-colour, .dark-mode .gitHub-colour-page{background: #fff;}
+.dark-mode .twitter-colour, .dark-mode .linkedIn-colour, .dark-mode .gitHub-colour, .dark-mode .gitHub-colour-page, .dark-mode .youtube-colour{background: #fff;}
 
 .dark-mode #strokes.active .top,  .dark-mode #strokes.active .middle, .dark-mode #strokes.active .bottom{stroke:#ffbb29;}
 
 .dark-mode .contact-anim:after{border-top: 0.08em solid #ffbb29;}
 
-.dark-mode .contact-anim:hover{color: #ffbb29;}
+.dark-mode .contact-anim:hover, .dark-mode .link-list:hover{color: #ffbb29;}
 
 .dark-mode #nav-overlay a:hover, .dark-mode #nav-overlay a:focus {color: #ffbb29;}
 
@@ -34,6 +34,8 @@ body {
 .dark-mode span {color: #ffbb29;}
 
 .dark-mode #cookieConsent a.cookieConsentOK {background-color: #ffbb29;}
+
+.dark-mode .nav-name {color: #343a40;}
 
 /* ================================================================================================================= */
 
@@ -67,6 +69,18 @@ section{
   vertical-align: middle;
 }
 
+.nav-name{
+  position: fixed; 
+  font-size: 30px; 
+  font-weight: 500;
+  margin: 20px 20px; 
+  color: #fcf7f7; 
+  cursor: pointer;
+  outline: none; 
+  text-decoration: none;  
+  z-index: 98;
+}
+
 .pro-img img {
   height: auto;
   max-width: 300px;
@@ -91,8 +105,7 @@ section{
   transform: translateY(0);
 }
 
-
-.contact-position{top: 0; transform: translateY(50px);}
+.wrapper-position{top: 0; transform: translateY(50px);}
 
 .img-container {
   max-width: 50%;
@@ -100,12 +113,13 @@ section{
   position: fixed;
   left: 45%;
   top: 20%;
-  transform: translate(-18%, 5%);
+  transform: translate(-18%, 2%);
+  margin-top: 100px;
   z-index: -1;
 }
 .img-container img,.img-container p {
   opacity: 1;
-  animation: slide-up 1.2s ease;
+  animation: fadingIn 1.2s ease;
 }
 .img-container img{
   position: absolute;
@@ -186,7 +200,7 @@ li:hover .img-animation {
   animation-iteration-count: infinite;
 }
 
-.positioning > ul li a {
+.wrapper-position > ul li a {
   line-height: 4rem;
   text-decoration: none;
   display: inline;
@@ -228,7 +242,7 @@ li:hover .img-animation {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-@keyframes slide-up {
+@keyframes fadingIn {
   from {
     opacity: 0;
   }
@@ -237,19 +251,72 @@ li:hover .img-animation {
   }
 }
 
+/*============================================================================================================================*/
+
+#blur.active{filter:blur(4px); z-index: -90;}
+
+#nav-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right:-60%;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transform: skew(-40deg);
+  z-index: 98;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  right: 25%;
+  text-align: center;
+  line-height: 5rem;
+  margin-top: 30px;
+  z-index: 99;
+  transform: skew(40deg);
+}
+
+#nav-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  outline: none;
+  transition: 0.3s;
+}
+
+#nav-overlay a:hover, #nav-overlay a:focus {color: #067cca;}
+
+@media screen and (max-width: 1200px) {
+  #nav-overlay{ transform: skew(0deg); right: -35%;}
+  #nav-overlay a {font-size: 25px;}
+  .overlay-content{
+    top: 10%;
+    right: 15%;
+    transform: skew(0deg);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #nav-overlay a {font-size: 20px;}
+}
+
+
 /* ================================================================================================================= */
 
 /* DARK MODE */
 .main-check{display: block;}
 .side-check{display: none;}
-#negative{margin: 15px;}
+#negative{margin: 15px -25px;}
 
 input[type = "checkbox"]{
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 20px;
   -webkit-appearance: none;
   background: linear-gradient(to right, #067cca 50%, #ffbb29 50%);
   background-size: 200% 100%;
@@ -270,8 +337,8 @@ input:checked[type = "checkbox"]{
 input[type = "checkbox"]:before{
   content: '';
   position: absolute;
-  width:40px;
-  height: 40px;
+  width:20px;
+  height: 20px;
   border-radius: 50%;
   top: 0;
   left: 0;
@@ -376,6 +443,7 @@ input:checked[type = "checkbox"]:before{
   gap: calc(20% + 30px);
   list-style: none;
 }
+
 .grid a {
   text-decoration: none;
 }
@@ -419,7 +487,7 @@ input:checked[type = "checkbox"]:before{
 /* ================================================================================================================= */
 
 /* CONTACT ANIMATION*/
-.contact-position{margin-left: 10px;}
+.wrapper-position{margin-left: 10px;}
 
 .contact-anim {
   position: relative;
@@ -587,60 +655,6 @@ svg{z-index: 99; cursor: pointer;}
 
 .cookieCrumble {display: none;}
 
-/*============================================================================================================================*/
-
-#blur.active{filter:blur(4px); z-index: -90;}
-
-#nav-overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right:-60%;
-  background-color: #000;
-  overflow-x: hidden;
-  transition: 0.5s;
-  transform: skew(-40deg);
-  z-index: 98;
-}
-
-.overlay-content {
-  position: relative;
-  top: 15%;
-  right: 25%;
-  /* width: 15%; */
-  text-align: center;
-  line-height: 5rem;
-  margin-top: 30px;
-  z-index: 99;
-  transform: skew(40deg);
-}
-
-#nav-overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-#nav-overlay a:hover, #nav-overlay a:focus {color: #067cca;}
-
-@media screen and (max-width: 900px) {
-  #nav-overlay{ transform: skew(0deg); right: -35%;}
-  #nav-overlay a {font-size: 25px;}
-  .overlay-content{
-    top: 10%;
-    right: 15%;
-    transform: skew(0deg);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #nav-overlay a {font-size: 20px;}
-}
-
 /* ================================================================================================================= */
 
 /* PAGE STYLE */
@@ -738,98 +752,15 @@ iframe {
   pointer-events: none;
 }
 
-.overlay-pics {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  margin: auto;
-}
-.overlay-pics img {
-  position: absolute;
-  object-fit: cover;
-  width: 760px;
-  top: 0;
-  left: 0;
-  transform: translate(10%, 5.5%);
-  object-fit: cover;
-}
-
 .git-img-phone {
   max-height: 80px;
   max-width: 300px;
   margin: 60px auto 0 auto;
 }
 
-/* INVASION PAGE */
 .the-box {
   display: flex;
   align-items: center;
-}
-
-.slideshow-container {
-  position: relative;
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Hide the images by default */
-.the-slide {
-  display: none;
-}
-
-.the-slide img{
-  width: 100%;
-  margin: auto;
-  margin-left: 50px;
-  margin-top: 120px;
-}
-
-/** Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: 250px;
-  padding: 16px;
-  margin-left: -20px;
-  margin-right: -245px;
-  color: #000000;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: #067cca;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 0.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
 
 /* ================================================================================================================= */
@@ -910,6 +841,16 @@ iframe {
   color: #ffffff;
 }
 
+.youtube-colour{
+  color: #c4302b;
+  background-color: #000000;
+}
+
+.youtube-colour:hover{
+  color: #ffffff;
+  background-color: #c4302b;
+}
+
 /* ================================================================================================================= */
 /* RESPONSIVE NAV */
 @media screen and (max-width: 800px) {
@@ -921,17 +862,19 @@ iframe {
     padding-top: 350px;
   }
 
+  .nav-name{font-size: 25px; font-weight: 500; margin: 30px 15px;}
+
   .positioning .img-container {
     display: none;
   }
 
   .positioning .each-list {
-    font-size: 6vw;
+    font-size: 20px;
     margin-left: 10px;
   }
 
   .positioning .each-list:hover {
-    font-size: 6vw;
+    font-size: 20px;
     animation: shake 0;
   }
 

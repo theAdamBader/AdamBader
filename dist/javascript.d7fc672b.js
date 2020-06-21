@@ -120,7 +120,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"js/javascript.js":[function(require,module,exports) {
 //HAMBURGER MENU
 document.getElementById("strokes").addEventListener("click", toggleFunc);
-document.querySelector(".overlay-content").addEventListener("click", toggleFunc);
+document.querySelector(".link-lists").addEventListener("click", toggleFunc);
 
 function toggleFunc() {
   var menu = document.getElementById("strokes");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53628" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54351" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

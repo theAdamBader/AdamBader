@@ -1,6 +1,6 @@
 //HAMBURGER MENU
 document.getElementById("strokes").addEventListener("click", toggleFunc);
-document.querySelector(".overlay-content").addEventListener("click", toggleFunc);
+document.querySelector(".link-lists").addEventListener("click", toggleFunc);
 
 function toggleFunc(){
     var menu= document.getElementById("strokes");

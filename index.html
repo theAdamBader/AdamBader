@@ -26,9 +26,7 @@
 
 <!-- NAVIGATION -->
 <div class="nav-bar"></div>
-<div class="main-check">
-    <input id="negative" type="checkbox">
-</div>
+<a href="#about" class="nav-name">ADAM BADER</a>
 
 <svg id="strokes" class="ham-svg" viewBox="0 0 100 100" width="80">
     <path
@@ -45,10 +43,17 @@
 <div id="nav-overlay">
     
     <div class= "overlay-content">
-        <a href="#about">ABOUT</a>
-        <a href="#portfolio">PORTFOLIO</a>
-        <a href="#art">ARTWORK</a>
-        <a href="#contact">CONTACT</a>
+        <div class="link-lists">
+            <a href="#about">ABOUT</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <!-- <a href="#projects">PROJECTS</a> -->
+            <a href="#art">ARTWORK</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        
+        <div class="main-check">
+            <input id="negative" type="checkbox">
+        </div>
     </div>
 
     <div class="side-check">
@@ -79,207 +84,232 @@
     
         <!-- UNI PROJECTS -->
         <section id="portfolio" class="positioning">
-            <h2 class="subtitle-font">GOLDSMITHS, <span>UNIVERSITY OF LONDON</span></h2>
-            <ul class="grid-container">    
-                <li>
-                    <div class="each-list">
-                        <a class="link-list" href="./alienated.html">ALIENATED</a>
-                    </div> 
-                    <div class="img-container">
-                        <div class="img-animation">
-                            <img src="img/thumbnails/alienated.jpg" alt="">
-                            <p>
-                                A 2D shoot ‘em game where you play as a protagonist who becomes the 
-                                antagonist of this game, causing nothing but destruction on his own clan for feeling alienated.
-                                <br><br>
-                                (Click for more information)
-                                <br class="br-space">
-                                <span class="program">C#</span> <span class="software">Unity</span> <span class="genre">Adventure</span>
-                                <br>
-                                <span class="genre">Shoot 'em</span>
-                            </p>
-                        </div>
-                    </div>          
-                </li>
-                <li>
-                    <div class="each-list">
-                        <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
-                    </div> 
-                    <div class="img-container">
-                        <div class="img-animation">
-                            <img src="img/thumbnails/tron.jpg" alt="">
-                            <p>
-                                Tron: The Upgrade is a top down grid-based game of the classic game Tron. This version has the ability 
-                                of making the player invisible for a couple of seconds where did does not leave any trail and passes 
-                                through trails created. 
-                                <br><br>
-                                (Click for more information)
-                                <br class="br-space">
-                                <span class="program">Java</span> <span class="software">Processing</span>
-                                <span class="genre">Multiplayer</span> <span class="genre">Action</span>
-                            </p>
-                        </div>
-                    </div>          
-                </li>
-                <li>
-                    <div class="each-list">
-                        <a class="link-list" href="./runforest.html">RUN FOREST RUN</a>
-                    </div> 
-                    <div class="img-container">
-                        <div class="img-animation">
-                            <img src="img/thumbnails/run_forest_run.jpg" alt="">
-                            <p>
-                                A side scrolling game where you play a tree log known as Forest Grump and you must 
-                                avoid getting burned by enemies heading towards you as well as the spreading fire behind 
-                                you. How far can you run until they catch you?  
-                                <br><br>
-                                (Click for more information)
-                                <br class="br-space">
-                                <span class="program">Java</span> <span class="software">Processing</span> <span class="genre">Adventure</span> 
-                            </p>
-                        </div>
-                    </div>          
-                </li>
+            <div class="wrapper-position">
+                <h2 class="subtitle-font">GOLDSMITHS, <span>UNIVERSITY OF LONDON</span></h2>
+                <ul class="grid-container">    
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./alienated.html">ALIENATED</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/alienated.jpg" alt="">
+                                <p>
+                                    A 2D shoot ‘em game where you play as a protagonist who becomes the 
+                                    antagonist of this game, causing nothing but destruction on his own clan for feeling alienated.
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">C#</span> <span class="software">Unity</span> <span class="genre">Adventure</span>
+                                    <br>
+                                    <span class="genre">Shoot 'em</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/tron.jpg" alt="">
+                                <p>
+                                    Tron: The Upgrade is a top down grid-based game of the classic game Tron. This version has the ability 
+                                    of making the player invisible for a couple of seconds where did does not leave any trail and passes 
+                                    through trails created. 
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">Java</span> <span class="software">Processing</span>
+                                    <span class="genre">Multiplayer</span> <span class="genre">Action</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./runforest.html">RUN FOREST RUN</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/run_forest_run.jpg" alt="">
+                                <p>
+                                    A side scrolling game where you play a tree log known as Forest Grump and you must 
+                                    avoid getting burned by enemies heading towards you as well as the spreading fire behind 
+                                    you. How far can you run until they catch you?  
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">Java</span> <span class="software">Processing</span> <span class="genre">Adventure</span> 
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./flyaway.html">FLY AWAY</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/flyaway.jpg" alt="">
+                                <p>
+                                    A quick 2D shoot ‘em up game where you play as an angle facing his inner demons. 
+                                    You start off with a swarm of enemies, can you vanquish your inner demons before they get you? 
+                                    <br><br>
+                                    (Click for more information)  
+                                    <br class="br-space">
+                                    <span class="program">C++</span> <span class="software">Visual Studios</span> <span class="software">openFrameworks</span>
+                                    <span class="genre">Shoot 'em</span> <span class="genre">Action</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./fingergun.html">FINGER GUN</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/fingergun.jpg" alt="">
+                                <p>
+                                    Finger Gun is the first game to be created using a Leap Motion and Wekinator, a software by my lecture 
+                                    Dr. Rebecca Fiebrink, with this I created a game that take a set of features and implement them onto Unity. 
+                                    It is an FPS (first person shooter) where you use your fingers to aim and fire at incoming enemies. 
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">C#</span> <span class="program">JavaScript</span> <span class="program">Java</span> 
+                                    <span class="program">Machine Learning</span>
+                                    <span class="software">Unity</span> <span class="software">Wekinator</span> <span class="software">Processing</span>
+                                    <span class="genre">Shoot 'em</span> <span class="genre">Action</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./cube.html">3x3x3 LED CUBE</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/cube.jpg" alt="">
+                                <p>
+                                    The 3D LED Cube was part of Physical Computing module which I took inspiration of creating a 3x3x3 LED 
+                                    Cube with patterns, using Arduino; however, part of the module was to make it interactive, so I created 
+                                    an additional program, using Processing, to create a pixel camera and using Wekinator and set examples of 
+                                    what to look for and execute the pattern depending on the users hand position. 
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">C++</span> <span class="program">Java</span> <span class="program">Machine Learning</span> <span class="software">Arduino</span> 
+                                    <span class="software">Processing</span> <span class="software">Wekinator</span>
+                                    <span class="genre">Physical Computing</span> <span class="genre">LED</span> <span class="genre">Human Interaction</span> 
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./lavieestbelle.html">LA VIE EST BELLE (VR)</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/lavie.jpg" alt="">
+                                <p>
+                                    La Vie est Belle (Life is beautiful) is a mobile virtual reality therapy game, on Android, 
+                                    that transports you into an immersive and calming world where you explore and solve two puzzles to 
+                                    get into the house; the music used in this game helped amplify the environment and feel of this game.  
+                                    <br><br>
+                                    (Click for more information)
 
-                <li>
-                    <div class="each-list">
-                        <a class="link-list" href="./invasionforce.html">INVASION ALPHA FORCE</a>
-                    </div> 
-                    <div class="img-container">
-                        <div class="img-animation">
-                            <img src="img/thumbnails/invasion.jpg" alt="">
-                            <p>
-                                A top down, 2D turn based RPG where you are creatures from another planet invading Earth 
-                                to grab resources, but you must defeat the humans you face. 
-                                <br><br>
-                                (Click for more information)
-                                <br class="br-space">
-                                <span class="program">GML</span> <span class="software">GameMaker</span>
-                                <span class="genre">Roleplay</span> <span class="genre">Turn-based</span>
-                            </p>
-                        </div>
-                    </div>          
-                </li>
-                <li>
-                    <div class="each-list">
-                        <a class="link-list" href="./flyaway.html">FLY AWAY</a>
-                    </div> 
-                    <div class="img-container">
-                        <div class="img-animation">
-                            <img src="img/thumbnails/flyaway.jpg" alt="">
-                            <p>
-                                A quick 2D shoot ‘em up game where you play as an angle facing his inner demons. 
-                                You start off with a swarm of enemies, can you vanquish your inner demons before they get you? 
-                                <br><br>
-                                (Click for more information)  
-                                <br class="br-space">
-                                <span class="program">C++</span> <span class="software">Visual Studios</span> <span class="software">openFrameworks</span>
-                                <span class="genre">Shoot 'em</span> <span class="genre">Action</span>
-                            </p>
-                        </div>
-                    </div>          
-                </li>
-                <li>
-                    <div class="each-list">
-                        <a class="link-list" href="./fingergun.html">FINGER GUN</a>
-                    </div> 
-                    <div class="img-container">
-                        <div class="img-animation">
-                            <img src="img/thumbnails/fingergun.jpg" alt="">
-                            <p>
-                                Finger Gun is the first game to be created using a Leap Motion and Wekinator, a software by my lecture 
-                                Dr. Rebecca Fiebrink, with this I created a game that take a set of features and implement them onto Unity. 
-                                It is an FPS (first person shooter) where you use your fingers to aim and fire at incoming enemies. 
-                                <br><br>
-                                (Click for more information)
-                                <br class="br-space">
-                                <span class="program">C#</span> <span class="program">JavaScript</span> <span class="program">Java</span> 
-                                <span class="program">Machine Learning</span>
-                                <span class="software">Unity</span> <span class="software">Wekinator</span> <span class="software">Processing</span>
-                                <span class="genre">Shoot 'em</span> <span class="genre">Action</span>
-                            </p>
-                        </div>
-                    </div>          
-                </li>
-                <li>
-                    <div class="each-list">
-                        <a class="link-list" href="./cube.html">3x3x3 LED CUBE</a>
-                    </div> 
-                    <div class="img-container">
-                        <div class="img-animation">
-                            <img src="img/thumbnails/cube.jpg" alt="">
-                            <p>
-                                The 3D LED Cube was part of Physical Computing module which I took inspiration of creating a 3x3x3 LED 
-                                Cube with patterns, using Arduino; however, part of the module was to make it interactive, so I created 
-                                an additional program, using Processing, to create a pixel camera and using Wekinator and set examples of 
-                                what to look for and execute the pattern depending on the users hand position. 
-                                <br><br>
-                                (Click for more information)
-                                <br class="br-space">
-                                <span class="program">C++</span> <span class="program">Java</span> <span class="program">Machine Learning</span> <span class="software">Arduino</span> 
-                                <span class="software">Processing</span> <span class="software">Wekinator</span>
-                                <span class="genre">Physical Computing</span> <span class="genre">LED</span> <span class="genre">Human Interaction</span> 
-                            </p>
-                        </div>
-                    </div>          
-                </li>
-                <li>
-                    <div class="each-list">
-                        <a class="link-list" href="./lavieestbelle.html">LA VIE EST BELLE (VR)</a>
-                    </div> 
-                    <div class="img-container">
-                        <div class="img-animation">
-                            <img src="img/thumbnails/lavie.jpg" alt="">
-                            <p>
-                                La Vie est Belle (Life is beautiful) is a mobile virtual reality therapy game, on Android, 
-                                that transports you into an immersive and calming world where you explore and solve two puzzles to 
-                                get into the house; the music used in this game helped amplify the environment and feel of this game.  
-                                <br><br>
-                                (Click for more information)
-
-                                <br class="br-space">
-                                
-                                <span class="program">C#</span> <span class="software">Unity</span> <span class="software">Blender</span>
-                                <span class="genre">Puzzle</span> <span class="genre">Adventure</span> 
-                                <span class="genre">VR</span> <span class="genre">Mobile</span> <span class="genre">Android</span>
-                            </p>
-                        </div>
-                    </div>          
-                </li>
-            </ul>
+                                    <br class="br-space">
+                                    
+                                    <span class="program">C#</span> <span class="software">Unity</span> <span class="software">Blender</span>
+                                    <span class="genre">Puzzle</span> <span class="genre">Adventure</span> 
+                                    <span class="genre">VR</span> <span class="genre">Mobile</span> <span class="genre">Android</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <!-- personal projects -->
-    <!-- <div class="container">
-            <section class="section-positioning" id="projects">
-                <div class="paragraph-positioning">
-                    <h2 class="">PRO<span>JECTS</span></h2>   
-
-                    <ul class="grid">    
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./alienated.html">ALIENATED</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/profile.jpg" alt="">
-                            </div>          
-                        </li>
-                        <li>
-                            <div class="each-list">
-                                <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
-                            </div> 
-                            <div class="img-container">
-                                <img class="img-animation" src="img/profile.jpg" alt="">
-                            </div>          
-                        </li>
-                    </ul>
-                    
-                </div>
-            </section>
-        </div> -->
+        <!-- PERSONAL PROJECTS -->
+        <!-- <section id="projects" class="positioning">
+            <div class="wrapper-position">
+                <h2 class="subtitle-font">PERSONAL <span>PROJECTS</span></h2>
+                <ul class="grid-container">    
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./myportfolio.html">MY PORTFOLIO (OLD TO NEW)</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/alienated.jpg" alt="">
+                                <p>
+                                    A 2D shoot ‘em game where you play as a protagonist who becomes the 
+                                    antagonist of this game, causing nothing but destruction on his own clan for feeling alienated.
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">C#</span> <span class="software">Unity</span> <span class="genre">Adventure</span>
+                                    <br>
+                                    <span class="genre">Shoot 'em</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./supertron.html">TRON: THE UPGRADE</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/tron.jpg" alt="">
+                                <p>
+                                    Tron: The Upgrade is a top down grid-based game of the classic game Tron. This version has the ability 
+                                    of making the player invisible for a couple of seconds where did does not leave any trail and passes 
+                                    through trails created. 
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">Java</span> <span class="software">Processing</span>
+                                    <span class="genre">Multiplayer</span> <span class="genre">Action</span>
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                        <div class="each-list">
+                            <a class="link-list" href="./runforest.html">RUN FOREST RUN</a>
+                        </div> 
+                        <div class="img-container">
+                            <div class="img-animation">
+                                <img src="img/thumbnails/run_forest_run.jpg" alt="">
+                                <p>
+                                    A side scrolling game where you play a tree log known as Forest Grump and you must 
+                                    avoid getting burned by enemies heading towards you as well as the spreading fire behind 
+                                    you. How far can you run until they catch you?  
+                                    <br><br>
+                                    (Click for more information)
+                                    <br class="br-space">
+                                    <span class="program">Java</span> <span class="software">Processing</span> <span class="genre">Adventure</span> 
+                                </p>
+                            </div>
+                        </div>          
+                    </li>
+                    <li>
+                    <h2 class="paragraph">MORE PROJECTS TO COME...</h2>
+                    </li>
+                </ul>   
+            </div>
+        </section> -->
 
         <!-- ART PROJECTS -->
         <section id="art">
+            <div class="wrapper-position">
                 <h2 class="subtitle-font">ART<span>WORK</span></h2>
                 <img class='artwork-img' src="./img/artwork/knight.jpg" alt='knight made using Aseprite'>
                 <img class='artwork-img' src="./img/artwork/necromancer.jpg" alt='necromancer made using Aseprite'>
@@ -289,11 +319,12 @@
                 <img class='artwork-img' src="./img/artwork/apple.jpg" alt='image of an apple that I am created for the la vie est belle logo'>
                 <img class='artwork-img' src="./img/artwork/beauty.jpg" alt='an image of my brother in four different shades. Inspried by Andy Warhol'>
                 <img class='artwork-img' src="./img/artwork/nike_one.jpg" alt='image of Nike Air Jordan One that has been modified to give an adverstisment look'>              
+            </div>
         </section>
 
         <!-- CONTACT -->
         <div id="contact">
-            <div class="contact-position">
+            <div class="wrapper-position">
                 <h3>Let's <span class="build-span"></span> something great!</h3>
                 <h3>Con<span>tact</span> <a class="contact-anim" href="mailto:adambader2589@gmail.com">Adam Bader</a></h3>
                 <h3>for <span class="change-span">.</span></h3>     
