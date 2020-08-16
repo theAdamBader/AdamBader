@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="Adam Bader" content="">
 
-	<title>Run Forest Run</title>
+	<title>Richard's Portfolio</title>
 	
 	<link rel="icon" href="./img/favicon.png">
 
@@ -62,30 +63,34 @@
 <div id="blur">
 	<section class="wrapper">
 		<div class="wrap">
-			<h1 class="headline-font">RUN FOREST RUN</h1>
+			<h1 class="headline-font">RICHARD'S PORTFOLIO</h1>
 
 			<div class="the-box">
 				<div class="overlay">
 					<img src="./img/project_backgrounds/ComputerMonitor.png" alt="">
-					<iframe width="640" height="385" src="https://www.youtube.com/embed/LIHrqKIMY4c" allowfullscreen></iframe>
+					<iframe width="640" height="385" src="https://www.youtube.com/embed/iLsfIQp76w8" allowfullscreen></iframe>
 				</div> 
 				<div class="text-container">
 					<div class="para-container">
 						<h1 class="title-font" id="overview">OVERVIEW</h1>
 						<br><br>
-						<p class="para-font">Run Forest Run (solo project) is a scrolling game in which you play as Forest Grump, a tree, 
-							that is running from a forest fire. The objective is to continue to run as far as you (the player) 
-							can go and see if you can beat the high score before the fire catches you. 
-							This was created using Processing (Java) and Adobe Illustrator. <br></p>
+						<p class="para-font">
+							The client requested for a portfolio site that would have an interactive navigation where each page 
+							highlights their talents. This has given me the incentive to create a spotlight effect where if 
+							consumers move around, they will have to find the link to click, each anchor link has its own 
+							animation. If you wish to visit their site, please click the link below.
+                        </p>
 						<div class="pro-img">
+							<div class="social-button">
+								<a class="page-icon richigo-colour" href="https://richardwajman.com" target="_blank"></a>
+							</div>
 							<div class="vid-display">
 								<div class="social-button">
-									<a class="page-icon youtube-colour-page" href="https://www.youtube.com/embed/LIHrqKIMY4c" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+									<a class="page-icon youtube-colour-page" href="https://www.youtube.com/embed/iLsfIQp76w8" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
 								</div>
 							</div>
-
 							<div class="social-button">
-								<a class="page-icon gitHub-colour-page" href="https://github.com/theAdamBader/runForestRun" target="_blank"><i class="fab fa-github-alt fa-3x"></i></a>
+								<a class="page-icon gitHub-colour-page" href="https://github.com/theAdamBader/Richigo" target="_blank"><i class="fab fa-github-alt fa-3x"></i></a>
 							</div>
 						</div>
 					</div>
@@ -98,24 +103,36 @@
 					<br><br>
 					<h2 class="subtitle-font" id="design">DESIGN</h2>
 					<p class="para-font">
-						The characters were designed using Adobe Illustrator as Illustrator deals with 
-						vectors and not pixels. The main character was drawn as a sprite sheet with different facial reactions and movement; as for the enemies they had a simple 
-						design with three to four frames for movement as they did not have any 
-						functionality other than for the player to avoid them. <br>
-						The level design was designed as a static image with the intention for it 
-						to loop infinite times throughout the duration of the game. 
+						The design of the wireframe and mock-up was designed using Adobe Photoshop to be able 
+						to understand as what the client would like their website to look like. Once they liked the initial 
+						design, I then used Visual Studio Code to start working on their site and as a feature for the site, I 
+						decided to take the initiative to add animations to each anchor link to give an indication as to what 
+						each is so that it could standout more than other portfolio sites. Finally, when the index page was 
+						finished, the next task was creating the pages in which the client and I would communicate to see what 
+						they thought of the pages and once they approved, I would go to the next task; however, I had an issue 
+						with the image for their index page as it would stretch depending on the screens ratio so I have had to 
+						spilt each bit of the image up and use an svg rect to create the rectangle that would fit behind their 
+						name.  
 
+						<br><br>
+
+						After that, we discussed how the mobile version should look like and as they wanted something that was 
+						basic, I then took the initiative to add a cookie banner to let users aware that if it is viewed on 
+						desktop, they are able to see the spotlight effect. 
 					</p>
 
 					<h2 class="subtitle-font" id="implementation">IMPLEMENTATION</h2>
-					<p class="para-font">The software that was used to run this project was 
-						Processing in which each class had its own class that dealt with the player’s 
-						functionality, the enemies’ movement, collision and background movement and have 
-						the main class initialise the functionalities from the other classes.
-						The game adheres a simple 2D character functions which is to press left and right
-						and jump using the space button; the background image used in the game is a 
-						static image that loops throughout the duration of the game and the appearance of 
-						the enemies appears depending how far the player reaches.
+					<p class="para-font">
+						To implement the design, I used Visual Code Studio as my text editor and using the following the 
+						programming language (HTML, CSS, Sass, JavaScript and jQuery) I was able to create a page that was similar 
+						to my mock-up site.
+
+						<br><br>
+						
+						For the project pages, I had to create several HTML files and when I first started the project, I also had 
+						several Sass/CSS files. In order to view the updated website on runtime rather than refreshing the page, I 
+						installed a ‘parcel’ package into the project which would run a local host rather than a filename, this 
+						allowed me to view the site every time I saved the project.
 					</p>							
 				</div>	
 			</div>

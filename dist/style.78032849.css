@@ -183,9 +183,10 @@ li:hover .img-animation {
 }
 
 .each-list {
-  width: 30%;
+  width: 40%;
   font-size: 1.8em;
   line-height: 2em;
+  outline: none;
 }
 
 .each-list:hover {
@@ -767,6 +768,7 @@ iframe {
 .social-button {
   height: 100%;
   width: 100%;
+  margin-bottom: 2%;
   text-align: center;
   list-style: none;
 }
@@ -848,6 +850,28 @@ iframe {
   background-color: #c4302b;
 }
 
+.page-icon > img{
+  max-width: 48px;
+  height: 48px;
+}
+
+.richigo-colour{
+  background: url("/r.1ae2c832.png") no-repeat;
+  background-position: center;
+  background-color: #000;
+}
+
+.richigo-colour:hover{background-color: #51a866;}
+
+.dark-mode .richigo-colour{
+  background: url("/darkR.f80781d5.png") no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+.dark-mode .richigo-colour:hover{background-color: #effd56}
+
+
 /* ================================================================================================================= */
 /* RESPONSIVE NAV */
 @media screen and (max-width: 800px) {
@@ -925,7 +949,6 @@ iframe {
   .social-buttons {
     font-size: 2vw;
     display: flex;
-    /* width: 100%; */
     transform: translateX(-50px);
   }
 
@@ -956,6 +979,10 @@ iframe {
   }
 
   .dark-mode .gitHub-colour-page{background: #6e5494;}
+
+  .richigo-colour{background-color: #51a866;}
+
+  .dark-mode .richigo-colour{background-color: #effd56;}
 
   /*COOKIE BANNER*/
   .cookieCrumble{display: block;}
